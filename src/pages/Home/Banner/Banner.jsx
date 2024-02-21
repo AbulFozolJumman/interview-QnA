@@ -6,69 +6,82 @@ const Banner = () => {
     <Container>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" defaultChecked />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           1. Tell me about yourself.
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
-            Answer: "I have a background in (your background) with a focus on
-            digital strategies. I've spent the last five years working for XYZ
-            Company, where I led successful campaigns that increased our online
-            presence. I'm passionate about leveraging data to make informed
-            decisions and thrive in dynamic team environments."
+            "Sure, thank you for the opportunity. My name is Abul Fozol Jumman,
+            and I am a passionate and dedicated web developer. Over the past two
+            years, I have been actively learning and working on honing my skills
+            in the MERN stack. I have a solid foundation in HTML, CSS,
+            JavaScript, and have gained hands-on experience with MongoDB,
+            Express.js, React.js, and Node.js. During my learning journey, I
+            have completed various projects that have allowed me to apply my
+            knowledge and showcase my abilities. I enjoy working on both
+            front-end and back-end development and find joy in creating
+            responsive and user-friendly web applications.
           </p>
         </div>
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           2. What are your strengths?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
-            Answer: "One of my key strengths is my ability to analyze and
-            interpret data, allowing me to make strategic decisions. I am also
-            known for my effective communication skills, which have been crucial
-            in collaborating with cross-functional teams and presenting ideas to
-            stakeholders."
+            "As a MERN stack developer, one of my main strengths is my ability
+            to work with the entire development stack smoothly. I have a strong
+            understanding of MongoDB, Express.js, React.js, and Node.js, which
+            allows me to develop full-stack applications efficiently. This means
+            I can create websites and web applications that work well and look
+            good for users."
           </p>
         </div>
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           3. What are your weaknesses?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
-            Answer: "I tend to be overly critical of my own work, constantly
-            seeking ways to improve. While this ensures high-quality output,
-            I've learned to balance it with acknowledging achievements and
-            celebrating milestones to maintain a positive mindset."
+            "One area I am currently working on improving as a MERN stack
+            developer is optimizing the speed and performance of large-scale
+            applications. While I have experience building applications of
+            different sizes, I understand that making them run faster and
+            smoother in complex situations can be challenging. To address this,
+            I am constantly learning about the best ways to improve performance
+            and exploring tools that can help, like caching and performance
+            monitoring. I actively seek opportunities to improve my skills in
+            this area so that the applications I build can run as fast as
+            possible for users."
           </p>
         </div>
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           4. Where do you see yourself in 5 years?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
-            Answer: "In five years, I envision myself in a leadership role
-            within the department site, contributing to the overall growth and
-            success of the organization. I am committed to continuous learning
-            and development to stay at the forefront of industry trends."
+            I see myself as a full stack developer who can handle both front end
+            and back end development. I want to master different web
+            technologies and frameworks, and create dynamic and interactive
+            websites and applications. I also want to learn from other
+            experienced developers and collaborate on challenging projects.
           </p>
         </div>
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           5. Why are you interested in working for [Company Name] *Before
           attending the interview, know about this company.
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Answer: "I am impressed by [Company Name]'s commitment to innovation
             and its stellar reputation in the industry. Your focus on [specific
@@ -80,25 +93,24 @@ const Banner = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           6. Why should we hire you?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
-            Answer: "You should hire me because of my proven track record in
-            driving successful marketing campaigns, my analytical mindset, and
-            my dedication to staying ahead of industry trends. I am confident
-            that my skills and passion for the field make me a valuable asset to
-            your team."
+            I believe that I have the web developer skills and qualities that
+            you are looking for, and I have excellent communication skills and I
+            work well in a team. I am confident that I can contribute to the
+            success of your company and its projects.
           </p>
         </div>
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           7. Tell me about your best project.
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Answer: "One of my most successful projects was [project name],
             where I spearheaded a comprehensive digital marketing campaign that
@@ -110,11 +122,11 @@ const Banner = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           8. What kind of challenges did you face when you did this project and
           how did you get over it?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Answer: "During [project], we faced challenges such as [specific
             challenge]. To overcome this, I fostered open communication within
@@ -127,10 +139,10 @@ const Banner = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           9. When you get an error what do you think about it and fix it?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Answer: "When I encounter an error, my first instinct is to analyze
             the root cause. I carefully review the situation, identify where the
@@ -142,11 +154,11 @@ const Banner = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           10. How do you deal with pressure or stressful situations? Or, How do
           you work under pressure?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Answer: "In high-pressure situations, I remain calm and focused on
             prioritizing tasks. I break down complex problems into smaller,
@@ -158,11 +170,11 @@ const Banner = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           11. What's the Biggest Challenge You've Faced? And how much time did
           you take to fix it?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Answer: "One significant challenge I faced was [describe challenge].
             It took about [timeframe] to address it effectively. During this
@@ -174,11 +186,11 @@ const Banner = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           12. How do you think you can contribute to the success of our
           organization? Or, What can you bring to the company?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Answer: "I believe my skills in [specific skills] and my track
             record of driving results in [relevant industry] make me a strong
@@ -190,10 +202,10 @@ const Banner = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           13. What interests you about this role?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Answer: "I am excited about this role because it provides an
             opportunity to leverage my skills in [specific skills] and
@@ -205,10 +217,10 @@ const Banner = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           14. Tell me about your work experience.
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Answer: "I have a robust background in [industry] with a focus on
             [specific responsibilities]. In my previous role at [previous
@@ -220,10 +232,10 @@ const Banner = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           15. What are you passionate about?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Answer: "I am passionate about [mention a specific aspect relevant
             to the job]. Whether it's [describe an activity or project], I find
@@ -235,10 +247,10 @@ const Banner = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           16. How did you hear about the position?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Answer: "I came across the position through [mention source, e.g., a
             job board, company website, referral]. Upon researching the role and
@@ -250,10 +262,10 @@ const Banner = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           17. Why are you leaving your current job?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Answer: "I am seeking new opportunities for growth and development.
             While I have valued my time at [current company], I believe that
@@ -265,10 +277,10 @@ const Banner = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           18. What is your greatest failure, and what did you learn from it?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Answer: "One of my greatest failures was [describe the situation].
             However, it taught me valuable lessons in [mention key lessons, such
@@ -280,10 +292,10 @@ const Banner = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           19. Can you give an example of a creative solution you implemented?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Answer: "In a previous project, we were faced with [describe the
             challenge]. I proposed a creative solution that involved [outline
@@ -295,10 +307,10 @@ const Banner = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           20. What is your salary range expectation?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Answer: "I am open to discussing salary based on the overall
             compensation package, which includes factors such as benefits,
@@ -309,11 +321,11 @@ const Banner = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           21. Do you have any questions? [before attend the interview, research
           about the company, company culture and technology]
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Answer: "Yes, I do. I've done some research on the company and
             noticed [mention something specific, e.g., recent achievements or

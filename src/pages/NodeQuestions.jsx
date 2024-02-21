@@ -5,10 +5,8 @@ const NodeQuestions = () => {
     <Container>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" defaultChecked />
-        <div className="collapse-title font-medium">
-          1.What is Nodejs?
-        </div>
-        <div className="collapse-content">
+        <div className="collapse-title text-3xl">1.What is Nodejs?</div>
+        <div className="collapse-content text-3xl">
           <p>
             Ans: Node.js is an open-source, cross-platform JavaScript runtime
             environment and library to run web applications outside the client’s
@@ -18,10 +16,8 @@ const NodeQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
-          2.Node vs javascript.
-        </div>
-        <div className="collapse-content">
+        <div className="collapse-title text-3xl">2.Node vs javascript.</div>
+        <div className="collapse-content text-3xl">
           <p>
             Ans: JavaScript is primarily used for client-side programming, while
             Node. js allows developers to build server-side applications using
@@ -46,10 +42,10 @@ const NodeQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           3.Nodejs single threaded or multi threaded?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: Nodejs is single-threaded but behind the scenes its behavior is
             multithreaded. Nodejs has two concepts asynchronous and nonblocking
@@ -61,10 +57,10 @@ const NodeQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           4.NodeJs is blocking or non-blocking?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: Node.js is non-blocking. Node.js operates on a single thread
             and utilizes an event-driven, non-blocking I/O model. This means
@@ -76,8 +72,8 @@ const NodeQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">5.What is Npm?</div>
-        <div className="collapse-content">
+        <div className="collapse-title text-3xl">5.What is Npm?</div>
+        <div className="collapse-content text-3xl">
           <p>
             Ans: npm stands for Node Package Manager. It is the default package
             manager for Node.js, used for installing, managing, and sharing
@@ -88,10 +84,8 @@ const NodeQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
-          6.sql vs nosql.
-        </div>
-        <div className="collapse-content">
+        <div className="collapse-title text-3xl">6.sql vs nosql.</div>
+        <div className="collapse-content text-3xl">
           <p>
             Ans: SQL (Structured Query Language) and NoSQL (Not Only SQL) are
             two types of database management systems, each with its own
@@ -101,10 +95,10 @@ const NodeQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           7.what will you do if the server side crushes?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: I will think fast and see what could be the cause of the
             problem then Restart the Server: <br />
@@ -118,10 +112,8 @@ const NodeQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
-          8.How does the API work?
-        </div>
-        <div className="collapse-content">
+        <div className="collapse-title text-3xl">8.How does the API work?</div>
+        <div className="collapse-content text-3xl">
           <p>
             Ans: APIs work by sharing data between applications, systems, and
             devices. This happens through a request and response cycle. A user
@@ -133,10 +125,8 @@ const NodeQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
-          9.What is CRUD?
-        </div>
-        <div className="collapse-content">
+        <div className="collapse-title text-3xl">9.What is CRUD?</div>
+        <div className="collapse-content text-3xl">
           <p>
             Ans: CRUD stands for Create, Read, Update, and Delete. It represents
             the four basic operations that can be performed on data in a
@@ -146,10 +136,8 @@ const NodeQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
-          10.Get vs post.
-        </div>
-        <div className="collapse-content">
+        <div className="collapse-title text-3xl">10.Get vs post.</div>
+        <div className="collapse-content text-3xl">
           <p>
             Ans: GET Method: <br />
             i. The GET method is used to request data from a specified resource.{" "}
@@ -172,10 +160,10 @@ const NodeQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           11.What is the difference between PUT and Patch?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: The main difference between the PUT and PATCH HTTP methods is
             their semantics and usage for updating resources in RESTful APIs.{" "}
@@ -192,10 +180,10 @@ const NodeQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           12.How will you secure an API?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: Securing an API implements various measures to protect it from
             unauthorized access, data breaches, and other security threats. To

@@ -2,7 +2,6 @@ import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProviders";
 
-
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { user, logOut } = useContext(AuthContext);
@@ -14,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="max-w-[2520px] xl:px-28 md:px-10 sm:px-2 lg:py-2 w-full px-4  mx-auto">
+    <div className="max-w-[2520px] xl:px-28 md:px-10 sm:px-2 lg:py-2 w-full px-4 bg-white text-black text-3xl mx-auto">
       <div className="relative flex items-center justify-between">
         <Link
           to="/"
@@ -22,11 +21,11 @@ const Navbar = () => {
           title=""
           className="inline-flex items-center"
         >
-          <div className="flex items-center justify-center w-40 h-28">
+          <div className="flex items-center justify-center">
             <h2 className="text-xl font-bold">Interview Questions</h2>
           </div>
         </Link>
-        <ul className="items-center hidden space-x-8 lg:flex text-black">
+        <ul className="items-center hidden space-x-8 lg:flex text-black text-3xl">
           <li>
             <NavLink
               to="/"
@@ -47,7 +46,7 @@ const Navbar = () => {
               JAVASCRIPT
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink
               to="/es6-question"
               aria-label=""
@@ -56,83 +55,73 @@ const Navbar = () => {
             >
               ES6
             </NavLink>
+          </li> */}
+          <li>
+            <NavLink
+              to="/react-question"
+              aria-label=""
+              title=""
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              REACT
+            </NavLink>
           </li>
-              <li>
-                <NavLink
-                  to="/react-question"
-                  aria-label=""
-                  title=""
-                  className={({ isActive }) =>
-                    isActive ? "active" : "default"
-                  }
-                >
-                  REACT
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/node-question"
-                  aria-label=""
-                  title=""
-                  className={({ isActive }) =>
-                    isActive ? "active" : "default"
-                  }
-                >
-                  NODE JS
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/express-question"
-                  aria-label=""
-                  title=""
-                  className={({ isActive }) =>
-                    isActive ? "active" : "default"
-                  }
-                >
-                  EXPRESS JS
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/mongo-question"
-                  aria-label=""
-                  title=""
-                  className={({ isActive }) =>
-                    isActive ? "active" : "default"
-                  }
-                >
-                  MONGODB
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/next-question"
-                  aria-label=""
-                  title=""
-                  className={({ isActive }) =>
-                    isActive ? "active" : "default"
-                  }
-                >
-                  NEXT JS
-                </NavLink>
-              </li>
+          <li>
+            <NavLink
+              to="/node-question"
+              aria-label=""
+              title=""
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              NODE JS
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/express-question"
+              aria-label=""
+              title=""
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              EXPRESS JS
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/mongo-question"
+              aria-label=""
+              title=""
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              MONGODB
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/next-question"
+              aria-label=""
+              title=""
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              NEXT JS
+            </NavLink>
+          </li>
         </ul>
         {user ? (
           <div className="hidden lg:flex  items-center gap-1">
             <Link to="/profile">
-            <div className="mt-6">
-              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                <div className="w-9 rounded-full">
-                  <img title={user?.displayName} src={user?.photoURL} />
-                </div>
-              </label>
-            </div>
+              <div className="mt-6">
+                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                  <div className="w-9 rounded-full">
+                    <img title={user?.displayName} src={user?.photoURL} />
+                  </div>
+                </label>
+              </div>
             </Link>
             <li>
               <button
                 onClick={handleLogOut}
-                className="btn btn-outline hidden lg:block btn-sm px-5 rounded-3xl text-black hover:bg-[#A81C51] hover:border-none my-4 uppercase"
+                className="btn btn-outline hidden lg:block btn-sm px-5 rounded-3xl text-black text-3xl hover:bg-[#A81C51] hover:border-none my-4 uppercase"
               >
                 Logout
               </button>
@@ -140,7 +129,7 @@ const Navbar = () => {
           </div>
         ) : (
           // <Link to="/login">
-          //   <button className="btn btn-outline hidden lg:block btn-sm px-5 rounded-3xl text-black hover:bg-[#A81C51] hover:border-none my-4 uppercase disabled">
+          //   <button className="btn btn-outline hidden lg:block btn-sm px-5 rounded-3xl text-black text-3xl hover:bg-[#A81C51] hover:border-none my-4 uppercase disabled">
           //     Login
           //   </button>
           // </Link>
@@ -154,7 +143,7 @@ const Navbar = () => {
             className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
             onClick={() => setIsMenuOpen(true)}
           >
-            <svg className="w-5 text-black" viewBox="0 0 24 24">
+            <svg className="w-5 text-black text-3xl" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
                 d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
@@ -223,78 +212,78 @@ const Navbar = () => {
                         ES6
                       </Link>
                     </li>
-                    
-                        <li>
-                          <Link
-                            to="/react-question"
-                            aria-label=""
-                            title=""
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            REACT
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            to="/node-question"
-                            aria-label=""
-                            title=""
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            NODE
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            to="/express-question"
-                            aria-label=""
-                            title=""
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            EXPRESS
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            to="/mongo-question"
-                            aria-label=""
-                            title=""
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            MONGODB
-                          </Link>
-                        </li>
-                        <li>
-                          <Link
-                            to="/next-question"
-                            aria-label=""
-                            title=""
-                            className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                          >
-                            NEXT
-                          </Link>
-                        </li>
-                        {user ? (
+
+                    <li>
+                      <Link
+                        to="/react-question"
+                        aria-label=""
+                        title=""
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      >
+                        REACT
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/node-question"
+                        aria-label=""
+                        title=""
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      >
+                        NODE
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/express-question"
+                        aria-label=""
+                        title=""
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      >
+                        EXPRESS
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/mongo-question"
+                        aria-label=""
+                        title=""
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      >
+                        MONGODB
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/next-question"
+                        aria-label=""
+                        title=""
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      >
+                        NEXT
+                      </Link>
+                    </li>
+                    {user ? (
                       <>
                         <Link to="/profile">
-                        <li>
-                          <label
-                            tabIndex={0}
-                            className="btn btn-ghost btn-circle avatar"
-                          >
-                            <div className="w-9 rounded-full">
-                              <img
-                                title={user?.displayName}
-                                src={user?.photoURL}
-                              />
-                            </div>
-                          </label>
-                        </li>
+                          <li>
+                            <label
+                              tabIndex={0}
+                              className="btn btn-ghost btn-circle avatar"
+                            >
+                              <div className="w-9 rounded-full">
+                                <img
+                                  title={user?.displayName}
+                                  src={user?.photoURL}
+                                />
+                              </div>
+                            </label>
+                          </li>
                         </Link>
                         <li>
                           <button
                             onClick={handleLogOut}
-                            className="btn btn-outline btn-sm px-5 rounded-3xl text-black hover:bg-[#A81C51] hover:border-none uppercase -ml-2"
+                            className="btn btn-outline btn-sm px-5 rounded-3xl text-black text-3xl hover:bg-[#A81C51] hover:border-none uppercase -ml-2"
                           >
                             Logout
                           </button>
@@ -302,7 +291,7 @@ const Navbar = () => {
                       </>
                     ) : (
                       // <Link to="/login">
-                      //   <button className="btn btn-outline btn-sm px-5 rounded-3xl text-black hover:bg-[#A81C51] hover:border-none my-4 -ml-2 uppercase">
+                      //   <button className="btn btn-outline btn-sm px-5 rounded-3xl text-black text-3xl hover:bg-[#A81C51] hover:border-none my-4 -ml-2 uppercase">
                       //     Login
                       //   </button>
                       // </Link>

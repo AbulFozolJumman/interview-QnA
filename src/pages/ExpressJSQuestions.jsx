@@ -5,10 +5,8 @@ const ExpressJSQuestions = () => {
     <Container>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" defaultChecked />
-        <div className="collapse-title font-medium">
-          1.What is Express js?
-        </div>
-        <div className="collapse-content">
+        <div className="collapse-title text-3xl">1.What is Express js?</div>
+        <div className="collapse-content text-3xl">
           <p>
             AAns: Express.js is the most popular web framework for Node.js. It
             makes it easier to organize your application’s functionality with
@@ -19,10 +17,10 @@ const ExpressJSQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           2.What are queries in Express JS?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: In Express.js, queries are parameters passed in the URL of an
             HTTP GET request. They`re accessed using req.query on the server
@@ -35,10 +33,10 @@ const ExpressJSQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           3. Why Do you use try catch in Express JS?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: In Express.js, try...catch blocks are used to catch errors and
             prevent them from crashing the application, ensuring smoother
@@ -49,10 +47,10 @@ const ExpressJSQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           4. Mention some features of Express JS.
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: Express.js is a powerful and popular web framework for Node.js,
             offering a wide range of features that make it ideal for building
@@ -77,10 +75,10 @@ const ExpressJSQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           5. Why do we use Express JS?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: We use Express.js for building web applications and APIs
             quickly and efficiently. It simplifies the process of handling HTTP
@@ -99,10 +97,10 @@ const ExpressJSQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           6. Difference between Node JS and Express JS?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: Node.js is the runtime environment that allows you to run
             JavaScript on the server, while Express.js is a framework that runs
@@ -137,10 +135,10 @@ const ExpressJSQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           7. What is Middleware in Express JS?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: Middleware functions in Express.js are functions that have
             access to the request and response objects. They can modify the
@@ -157,10 +155,10 @@ const ExpressJSQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           8. Explain what is CORS in Express jS?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: CORS (Cross-Origin Resource Sharing) in Express.js is a
             security feature that controls which origins (websites) are allowed
@@ -172,10 +170,10 @@ const ExpressJSQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           9.What are the different types of HTTP requests?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: HTTP (Hypertext Transfer Protocol) These HTTP methods provide a
             standardized way for clients to interact with resources on web
@@ -239,10 +237,10 @@ const ExpressJSQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title text-3xl">
           10.What is the use of app.use in Express JS?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: The app. use() function is used to mount the specified
             middleware function(s) at the path that is being specified. It is

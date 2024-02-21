@@ -5,10 +5,10 @@ const MongoDBQuestion = () => {
     <Container>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" defaultChecked />
-        <div className="collapse-title  font-medium">
+        <div className="collapse-title text-3xl">
           1.What is the $ set in MongoDB?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: In MongoDB, the $set operator is used to replace the value of a
             field with a specified value. $set is to update or create fields
@@ -23,10 +23,10 @@ const MongoDBQuestion = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title  font-medium">
+        <div className="collapse-title text-3xl">
           2.What is the purpose of a database?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: The purpose of a database is to efficiently and securely store,
             manage, and retrieve data. Databases serve as organized repositories
@@ -47,10 +47,10 @@ const MongoDBQuestion = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title  font-medium">
+        <div className="collapse-title text-3xl">
           3.What do you mean by database design and database schema design?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: Database design creates the blueprint for the entire database
             system, covering its architecture, organization, and implementation
@@ -63,10 +63,10 @@ const MongoDBQuestion = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title  font-medium">
+        <div className="collapse-title text-3xl">
           4. What is mongoose? How does it work? Have you ever used it?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: Mongoose is a MongoDB object modeling tool designed to work in
             an asynchronous environment. It provides an elegant way to interact
@@ -106,10 +106,10 @@ const MongoDBQuestion = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title  font-medium">
+        <div className="collapse-title text-3xl">
           5. Why do we use Node MongoDB with React without Mysql?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: Using Node.js with MongoDB alongside React instead of MySQL
             offers several advantages: <br />
@@ -132,10 +132,10 @@ const MongoDBQuestion = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title  font-medium">
+        <div className="collapse-title text-3xl">
           6. How Does MongoDB Differ From Traditional Relational Databases?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: MongoDB differs from traditional relational databases in
             several key aspects: <br />
@@ -168,10 +168,10 @@ const MongoDBQuestion = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title  font-medium">
+        <div className="collapse-title text-3xl">
           7.What is a collection in MongoDB?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: A collection in MongoDB is like a table in a relational
             database, storing related documents. It offers flexibility in
@@ -182,10 +182,10 @@ const MongoDBQuestion = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title  font-medium">
+        <div className="collapse-title text-3xl">
           8. How does MongoDB store data?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: MongoDB stores data as BSON documents, which are binary
             representations of JSON-like data. These documents are organized
@@ -197,10 +197,10 @@ const MongoDBQuestion = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title  font-medium">
+        <div className="collapse-title text-3xl">
           9. What is the primary key in MongoDB?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: In MongoDB, the primary key is represented by the ``_id``
             field, which uniquely identifies each document within a collection.

@@ -6,11 +6,11 @@ const ReactQuestions = () => {
     <Container>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" defaultChecked />
-        <div className="collapse-title font-medium">
-          1. What is reactjs? Tell us about advantages and disadvantages of
+        <div className="collapse-title bg-white text-3xl">
+          1. What is react js? Tell us about advantages and disadvantages of
           using react js.
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: React, is an open-source JavaScript library, particularly used
             for single-page applications where the user interface needs to be
@@ -26,10 +26,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           2. Why will you select ReactJS?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: It is Fast and easy to use. React. js has the advantage of
             creating discrete components that make up the larger UI, and then
@@ -40,11 +40,11 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           3. What is Virtual dom? What are the differences between virtual and
           real dom?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: The Virtual DOM is a lightweight, in-memory representation of
             the Real DOM used in frameworks like React.js. It mirrors the
@@ -58,10 +58,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           4. Differences between props and state?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: In React.js, both props and state are used to manage data
             within components, but they serve different purposes and have
@@ -83,10 +83,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           5. What is the purpose of useState? When and why will you use it?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: useState is a fundamental hook in React used for managing state
             within functional components, enabling developers to create
@@ -96,10 +96,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           6. What is a context API? How does it work?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: The Context API in React is a mechanism for sharing data
             between components without having to explicitly pass props through
@@ -131,10 +131,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           7. Difference between useEffect and useState?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: useState and useEffect are both hooks provided by React, but
             they serve different purposes: <br />
@@ -159,10 +159,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           8. What is JSX? How does it work?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: JSX is a syntax extension for JavaScript used in React for
             defining UI components. It allows developers to write HTML-like code
@@ -174,10 +174,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           9. Tell us about React Component lifecycle?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: The three phases are: Mounting, Updating, and Unmounting.
             <br />
@@ -194,11 +194,11 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           10. What is the purpose of a custom hook? How will you create a custom
           hook? Give us an example.
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: A custom Hook is a JavaScript function whose name starts with
             ”use” and that may be called other Hooks. It allows you to extract
@@ -212,10 +212,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           11. How would you optimize a react js application?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: Optimizing a React.js application involves various strategies
             to improve performance, user experience, and code maintainability.
@@ -229,11 +229,11 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           12. How will you send data from a Child Component to the parent
           component?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: In React, you can send data from a child component to a parent
             component by passing a callback function as a prop from the parent
@@ -244,10 +244,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           13. What is the best way to send 4 or more props to a child component?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: When 4 or more props to a child component best use to way use
             Context API. Context API allows data to be passed through a
@@ -258,10 +258,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           14. What is React Router Dom?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: React Router is a JavaScript framework that lets us handle
             client and server-side routing in React applications. It enables the
@@ -272,10 +272,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           15. What is the State? How does it work?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: State is used to manage data within a component itself. When
             the state of a component changes, React will automatically re-render
@@ -285,10 +285,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           16. What is props drilling?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: Prop drilling occurs when a parent component passes data down
             to its children and then those children pass the same data down to
@@ -298,10 +298,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           17. Why do we inject dependency inside a UseEfect hook?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: In a useEffect hook in React, dependency injection is done to
             specify which variables or state values the effect depends on. This
@@ -312,10 +312,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           18. What is the react memo()? And why will you use it?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: React.memo() is a higher-order component in React used for
             memoization. It memoizes functional components to prevent
@@ -327,10 +327,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           19. What are the controlled components in React JS?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: Controlled Components are those in which the form’s data is
             handled by the component’s state. A controlled component is under
@@ -340,10 +340,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           20. What is the Lifting State up method in react?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: Lifting state up in React involves moving the state from a
             child component to its parent component. This allows multiple child
@@ -354,10 +354,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           21. What are stateful and stateless components?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: A stateless component in React is a lightweight component that
             doesn't have its own internal state. A stateful (class) component,
@@ -367,10 +367,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           22. Authentication Vs Authorization.
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: Here are some key differences between authentication and
             authorization:
@@ -387,10 +387,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           23. What is the diff algorithm?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: A diff algorithm is a method for comparing two sets of data and
             finding the differences between them. It is commonly used in web
@@ -402,10 +402,10 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">
+        <div className="collapse-title bg-white text-3xl">
           24. Significance of the key in react?
         </div>
-        <div className="collapse-content">
+        <div className="collapse-content text-3xl">
           <p>
             Ans: In React, the key attribute is crucial for efficient list
             rendering. It optimizes updates, maintains component identity,
@@ -416,8 +416,8 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title font-medium">25. What is JWT?</div>
-        <div className="collapse-content">
+        <div className="collapse-title bg-white text-3xl">25. What is JWT?</div>
+        <div className="collapse-content text-3xl">
           <p>
             Ans: JWT stands for JSON Web Token. JWT is an open standard for
             securely transmitting information between parties as a JSON object.
