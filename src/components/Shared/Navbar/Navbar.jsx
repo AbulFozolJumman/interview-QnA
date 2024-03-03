@@ -46,16 +46,16 @@ const Navbar = () => {
               JAVASCRIPT
             </NavLink>
           </li>
-          {/* <li>
+          <li>
             <NavLink
-              to="/es6-question"
+              to="/advance-question"
               aria-label=""
               title=""
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-              ES6
+              Advance
             </NavLink>
-          </li> */}
+          </li>
           <li>
             <NavLink
               to="/react-question"

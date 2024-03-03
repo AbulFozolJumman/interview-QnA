@@ -5,7 +5,9 @@ const ExpressJSQuestions = () => {
     <Container>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" defaultChecked />
-        <div className="collapse-title text-3xl">1.What is Express js?</div>
+        <div className="collapse-title text-3xl">
+          1.What is <span className="font-bold">Express</span> js?
+        </div>
         <div className="collapse-content text-3xl">
           <p>
             AAns: Express.js is the most popular web framework for Node.js. It
@@ -18,7 +20,7 @@ const ExpressJSQuestions = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          2.What are queries in Express JS?
+          2.What are <span className="font-bold">queries</span> in Express JS?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -34,7 +36,8 @@ const ExpressJSQuestions = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          3. Why Do you use try catch in Express JS?
+          3. Why Do you use <span className="font-bold">try catch</span> in
+          Express JS?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -48,7 +51,8 @@ const ExpressJSQuestions = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          4. Mention some features of Express JS.
+          4. Mention some <span className="font-bold">features</span> of Express
+          JS.
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -76,7 +80,7 @@ const ExpressJSQuestions = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          5. Why do we use Express JS?
+          5. Why do we <span className="font-bold">use</span> Express JS?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -98,7 +102,8 @@ const ExpressJSQuestions = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          6. Difference between Node JS and Express JS?
+          6. Difference between{" "}
+          <span className="font-bold">Node JS and Express JS?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -136,7 +141,8 @@ const ExpressJSQuestions = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          7. What is Middleware in Express JS?
+          7. What is <span className="font-bold">Middleware</span> in Express
+          JS?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -156,7 +162,8 @@ const ExpressJSQuestions = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          8. Explain what is CORS in Express jS?
+          8. Explain what is <span className="font-bold">CORS</span> in Express
+          jS?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -171,7 +178,8 @@ const ExpressJSQuestions = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          9.What are the different types of HTTP requests?
+          9.What are the different types of{" "}
+          <span className="font-bold">HTTP requests?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -238,7 +246,8 @@ const ExpressJSQuestions = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          10.What is the use of app.use in Express JS?
+          10.What is the use of <span className="font-bold">app.use</span> in
+          Express JS?
         </div>
         <div className="collapse-content text-3xl">
           <p>

@@ -7,8 +7,8 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" defaultChecked />
         <div className="collapse-title bg-white text-3xl">
-          1. What is react js? Tell us about advantages and disadvantages of
-          using react js.
+          1. What is <span className="font-bold">React js?</span> Tell us about
+          advantages and disadvantages of using react js.
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -27,7 +27,7 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          2. Why will you select ReactJS?
+          2. Why will you <span className="font-bold">select ReactJS?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -41,8 +41,8 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          3. What is Virtual dom? What are the differences between virtual and
-          real dom?
+          3. What is <span className="font-bold">Virtual dom?</span> What are
+          the differences between virtual and real dom?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -59,7 +59,8 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          4. Differences between props and state?
+          4. Differences between{" "}
+          <span className="font-bold">props and state?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -84,7 +85,8 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          5. What is the purpose of useState? When and why will you use it?
+          5. What is the purpose of <span className="font-bold">useState?</span>{" "}
+          When and why will you use it?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -97,7 +99,8 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          6. What is a context API? How does it work?
+          6. What is a <span className="font-bold">context API?</span> How does
+          it work?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -132,7 +135,8 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          7. Difference between useEffect and useState?
+          7. Difference between{" "}
+          <span className="font-bold">useEffect and useState?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -160,7 +164,7 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          8. What is JSX? How does it work?
+          8. What is <span className="font-bold">JSX?</span> How does it work?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -175,7 +179,8 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          9. Tell us about React Component lifecycle?
+          9. Tell us about React{" "}
+          <span className="font-bold">Component lifecycle?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -195,8 +200,9 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          10. What is the purpose of a custom hook? How will you create a custom
-          hook? Give us an example.
+          10. What is the purpose of a{" "}
+          <span className="font-bold">custom hook?</span> How will you create a
+          custom hook? Give us an example.
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -213,7 +219,8 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          11. How would you optimize a react js application?
+          11. How would you <span className="font-bold">optimize</span> a react
+          js application?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -230,8 +237,10 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          12. How will you send data from a Child Component to the parent
-          component?
+          12. How will you send data from a{" "}
+          <span className="font-bold">
+            Child Component to the parent component?
+          </span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -245,7 +254,9 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          13. What is the best way to send 4 or more props to a child component?
+          13. What is the best way to send{" "}
+          <span className="font-bold">4 or more</span> props to a child
+          component?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -259,7 +270,7 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          14. What is React Router Dom?
+          14. What is <span className="font-bold">React Router Dom?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -273,7 +284,8 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          15. What is the State? How does it work?
+          15. What is the <span className="font-bold">State?</span> How does it
+          work?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -286,7 +298,7 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          16. What is props drilling?
+          16. What is <span className="font-bold">props drilling</span>?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -299,7 +311,8 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          17. Why do we inject dependency inside a UseEfect hook?
+          17. Why do we <span className="font-bold">inject dependency</span>{" "}
+          inside a UseEfect hook?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -313,7 +326,8 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          18. What is the react memo()? And why will you use it?
+          18. What is the <span className="font-bold">react memo()</span>? And
+          why will you use it?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -328,7 +342,8 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          19. What are the controlled components in React JS?
+          19. What are the{" "}
+          <span className="font-bold">controlled components</span> in React JS?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -341,7 +356,8 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          20. What is the Lifting State up method in react?
+          20. What is the{" "}
+          <span className="font-bold">Lifting State up method in react?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -355,7 +371,8 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          21. What are stateful and stateless components?
+          21. What are{" "}
+          <span className="font-bold">stateful and stateless components?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -368,7 +385,8 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          22. Authentication Vs Authorization.
+          22.{" "}
+          <span className="font-bold">Authentication Vs Authorization.</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -388,7 +406,7 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          23. What is the diff algorithm?
+          23. What is the <span className="font-bold">diff algorithm?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -403,7 +421,8 @@ const ReactQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          24. Significance of the key in react?
+          24. Significance of the{" "}
+          <span className="font-bold">key in react?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -416,7 +435,9 @@ const ReactQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title bg-white text-3xl">25. What is JWT?</div>
+        <div className="collapse-title bg-white text-3xl">
+          25. What is <span className="font-bold">JWT?</span>
+        </div>
         <div className="collapse-content text-3xl">
           <p>
             Ans: JWT stands for JSON Web Token. JWT is an open standard for

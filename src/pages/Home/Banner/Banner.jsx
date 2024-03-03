@@ -16,10 +16,10 @@ const Banner = () => {
             years, I have been actively learning and working on honing my skills
             in the MERN stack. I have a solid foundation in HTML, CSS,
             JavaScript, and have gained hands-on experience with MongoDB,
-            Express.js, React.js, and Node.js. During my learning journey, I
-            have completed various projects that have allowed me to apply my
-            knowledge and showcase my abilities. I enjoy working on both
-            front-end and back-end development and find joy in creating
+            Express.js, React.js, and Node.js. <br /> During my learning
+            journey, I have completed various projects that have allowed me to
+            apply my knowledge and showcase my abilities. I enjoy working on
+            both front-end and back-end development and find joy in creating
             responsive and user-friendly web applications.
           </p>
         </div>

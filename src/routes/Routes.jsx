@@ -11,57 +11,60 @@ import NodeQuestions from "../pages/NodeQuestions";
 import ExpressJSQuestions from "../pages/ExpressJSQuestions";
 import MongoDBQuestion from "../pages/MongoDBQuestion";
 import NextJSQuestions from "../pages/NextJSQuestions";
+import Advance from "../pages/Advance";
 
 const router = createBrowserRouter([
-    {
+  {
+    path: "/",
+    element: <MainLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
         path: "/",
-        element: <MainLayout/>,
-        errorElement: <ErrorPage />,
-        children: [
-          {
-            path: "/",
-            element: <Home />,
-          },
-          {
-            path: "/js-question",
-            element: <JavascriptQuestions />,
-          },
-          {
-            path: "/es6-question",
-            element: <ES6Questions />,
-          },
-          {
-            path: "/react-question",
-            element: <ReactQuestions />,
-          },
-          {
-            path: "/node-question",
-            element: <NodeQuestions />,
-          },
-          {
-            path: "/express-question",
-            element: <ExpressJSQuestions />,
-          },
-          {
-            path: "/mongo-question",
-            element: <MongoDBQuestion />,
-          },
-          {
-            path: "/next-question",
-            element: <NextJSQuestions />,
-          },
-          
-        ]
-    },
-    {
-        path: "/login",
-        element: <Login />,
+        element: <Home />,
       },
       {
-        path: "/signUp",
-        element: <SignUp />,
+        path: "/js-question",
+        element: <JavascriptQuestions />,
       },
-  ]);
+      {
+        path: "/es6-question",
+        element: <ES6Questions />,
+      },
+      {
+        path: "/react-question",
+        element: <ReactQuestions />,
+      },
+      {
+        path: "/node-question",
+        element: <NodeQuestions />,
+      },
+      {
+        path: "/express-question",
+        element: <ExpressJSQuestions />,
+      },
+      {
+        path: "/advance-question",
+        element: <Advance />,
+      },
+      {
+        path: "/mongo-question",
+        element: <MongoDBQuestion />,
+      },
+      {
+        path: "/next-question",
+        element: <NextJSQuestions />,
+      },
+    ],
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/signUp",
+    element: <SignUp />,
+  },
+]);
 
-
-  export default router;
+export default router;

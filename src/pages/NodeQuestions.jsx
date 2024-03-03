@@ -5,7 +5,9 @@ const NodeQuestions = () => {
     <Container>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" defaultChecked />
-        <div className="collapse-title text-3xl">1.What is Nodejs?</div>
+        <div className="collapse-title text-3xl">
+          1.What is <span className="font-bold">Nodejs?</span>
+        </div>
         <div className="collapse-content text-3xl">
           <p>
             Ans: Node.js is an open-source, cross-platform JavaScript runtime
@@ -16,7 +18,9 @@ const NodeQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title text-3xl">2.Node vs javascript.</div>
+        <div className="collapse-title text-3xl">
+          2.<span className="font-bold">Node vs javascript.</span>
+        </div>
         <div className="collapse-content text-3xl">
           <p>
             Ans: JavaScript is primarily used for client-side programming, while
@@ -43,7 +47,8 @@ const NodeQuestions = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          3.Nodejs single threaded or multi threaded?
+          3.Nodejs{" "}
+          <span className="font-bold">single threaded or multi threaded?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -58,7 +63,8 @@ const NodeQuestions = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          4.NodeJs is blocking or non-blocking?
+          4.NodeJs is{" "}
+          <span className="font-bold">blocking or non-blocking?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -72,7 +78,9 @@ const NodeQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title text-3xl">5.What is Npm?</div>
+        <div className="collapse-title text-3xl">
+          5.What is <span className="font-bold">Npm?</span>
+        </div>
         <div className="collapse-content text-3xl">
           <p>
             Ans: npm stands for Node Package Manager. It is the default package
@@ -84,7 +92,9 @@ const NodeQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title text-3xl">6.sql vs nosql.</div>
+        <div className="collapse-title text-3xl">
+          6.<span className="font-bold">sql vs nosql.</span>
+        </div>
         <div className="collapse-content text-3xl">
           <p>
             Ans: SQL (Structured Query Language) and NoSQL (Not Only SQL) are
@@ -96,7 +106,8 @@ const NodeQuestions = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          7.what will you do if the server side crushes?
+          7.what will you do if the{" "}
+          <span className="font-bold">server side crushes?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -112,7 +123,9 @@ const NodeQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title text-3xl">8.How does the API work?</div>
+        <div className="collapse-title text-3xl">
+          8.How does the <span className="font-bold">API work?</span>
+        </div>
         <div className="collapse-content text-3xl">
           <p>
             Ans: APIs work by sharing data between applications, systems, and
@@ -125,7 +138,9 @@ const NodeQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title text-3xl">9.What is CRUD?</div>
+        <div className="collapse-title text-3xl">
+          9.What is <span className="font-bold">CRUD?</span>
+        </div>
         <div className="collapse-content text-3xl">
           <p>
             Ans: CRUD stands for Create, Read, Update, and Delete. It represents
@@ -136,7 +151,9 @@ const NodeQuestions = () => {
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title text-3xl">10.Get vs post.</div>
+        <div className="collapse-title text-3xl">
+          10.<span className="font-bold">Get vs post.</span>
+        </div>
         <div className="collapse-content text-3xl">
           <p>
             Ans: GET Method: <br />
@@ -161,7 +178,8 @@ const NodeQuestions = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          11.What is the difference between PUT and Patch?
+          11.What is the difference between{" "}
+          <span className="font-bold">PUT and Patch?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -181,7 +199,7 @@ const NodeQuestions = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          12.How will you secure an API?
+          12.How will you <span className="font-bold">secure an API?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>

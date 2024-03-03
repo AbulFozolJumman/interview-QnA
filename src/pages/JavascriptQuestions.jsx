@@ -6,7 +6,7 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" defaultChecked />
         <div className="collapse-title bg-white text-3xl">
-          1. What is JavaScript?
+          1. What is <span className="font-bold">JavaScript?</span>
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -20,7 +20,7 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          2. How does JavaScript work?
+          2. How does JavaScript <span className="font-bold">work?</span>
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -35,7 +35,8 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          3. How does JavaScript code is executed in the Browser?
+          3. How does JavaScript code is{" "}
+          <span className="font-bold">executed in the Browser?</span>
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -50,7 +51,8 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          4. What are the differences between “==” and “===” ?
+          4. What are the differences between{" "}
+          <span className="font-bold">“==” and “===” ?</span>
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -66,7 +68,7 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          5. What is a callback function?
+          5. What is a <span className="font-bold">callback</span> function?
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -74,14 +76,22 @@ const JavascriptQuestions = () => {
             that it can be executed in that other function is called a callback
             function. In JavaScript, the way to create a callback function is to
             pass it as a parameter to another function and then call it back
-            after the task is completed.
+            after the task is completed. <br />
+            How it works: <br />
+            Callbacks are commonly used when handling asynchronous events. They
+            allow us to control the flow of execution and handle tasks that take
+            time to complete without blocking other code execution <br />
+            Usage Example: <br />
+            Suppose we have two functions: myFirst and mySecond. We want
+            mySecond to run only after myFirst has finished executing.
           </p>
         </div>
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          6. When will you return something from a function?
+          6. When will you <span className="font-bold">return</span> something
+          from a function?
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -95,7 +105,8 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          7. Tell me about bind, call, and apply.
+          7. Tell me about{" "}
+          <span className="font-bold">bind, call, and apply.</span>
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -111,7 +122,8 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          8. What is a Closure in JavaScript? How does it work?
+          8. What is a <span className="font-bold">Closure</span> in JavaScript?
+          How does it work?
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -124,7 +136,8 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          9. What does the “this” keyword indicate in JavaScript?
+          9. What does the <span className="font-bold">“this”</span> keyword
+          indicate in JavaScript?
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -138,7 +151,7 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          10.What is Event bubbling in js?
+          10.What is Event <span className="font-bold">bubbling</span> in js?
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -151,7 +164,7 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          11. What is an Event Loop?
+          11. What is an Event <span className="font-bold">Loop?</span>
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -165,7 +178,7 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          12. Explain hoisting in JavaScript.
+          12. Explain <span className="font-bold">hoisting</span> in JavaScript.
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -178,7 +191,7 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          13. What is a recursive function?
+          13. What is a <span className="font-bold">recursive function?</span>
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -190,7 +203,8 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          14. Difference between undefined and null.
+          14. Difference between{" "}
+          <span className="font-bold">undefined and null.</span>
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -207,7 +221,8 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          15. What are the different data types in JavaScript?
+          15. What are the{" "}
+          <span className="font-bold">different data types</span> in JavaScript?
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -225,7 +240,9 @@ const JavascriptQuestions = () => {
       </div>
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
-        <div className="collapse-title bg-white text-3xl">16. What is DOM?</div>
+        <div className="collapse-title bg-white text-3xl">
+          16. What is <span className="font-bold">DOM?</span>
+        </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
             The Document Object Model (DOM) is a programming interface for web
@@ -237,7 +254,8 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          17. Is JavaScript a static type or a dynamic type?
+          17. Is JavaScript a{" "}
+          <span className="font-bold">static type or a dynamic type?</span>
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -251,7 +269,7 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          18. What is a variable?
+          18. What is a <span className="font-bold"></span>
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -264,8 +282,9 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          19. What are compilers and interpreters? And what is the difference
-          between them?
+          19. What are{" "}
+          <span className="font-bold">compilers and interpreters?</span> And
+          what is the difference between them?
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -281,8 +300,8 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          20. What is scope? And what are block scope, global scope, and
-          function scope?
+          20. What is <span className="font-bold">scope?</span> And what are
+          block scope, global scope, and function scope?
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -301,7 +320,7 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          21. find() vs filter().
+          21. <span className="font-bold">find() vs filter().</span>
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -317,7 +336,7 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          22. map() vs forEach().
+          22. <span className="font-bold">map() vs forEach().</span>
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -332,7 +351,8 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          23. What is a function in Javascript?
+          23. What is a <span className="font-bold">function</span> in
+          Javascript?
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -347,7 +367,10 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          24. Function declaration vs function expression.
+          24.{" "}
+          <span className="font-bold">
+            Function declaration vs function expression.
+          </span>
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -365,7 +388,8 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          25. What are the break and continue statements?
+          25. What are the{" "}
+          <span className="font-bold">break and continue statements?</span>
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -378,7 +402,7 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          26. What is the global variable?
+          26. What is the <span className="font-bold">global variable?</span>
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
@@ -392,7 +416,8 @@ const JavascriptQuestions = () => {
       <div className="collapse bg-white">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title bg-white text-3xl">
-          27. How to handle an asynchronous program?
+          27. How to handle an{" "}
+          <span className="font-bold">asynchronous program?</span>
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>

@@ -6,7 +6,7 @@ const MongoDBQuestion = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" defaultChecked />
         <div className="collapse-title text-3xl">
-          1.What is the $ set in MongoDB?
+          1.What is the <span className="font-bold">$set</span> in MongoDB?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -24,7 +24,8 @@ const MongoDBQuestion = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          2.What is the purpose of a database?
+          2.What is the <span className="font-bold">purpose of a database</span>
+          ?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -48,7 +49,10 @@ const MongoDBQuestion = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          3.What do you mean by database design and database schema design?
+          3.What do you mean by{" "}
+          <span className="font-bold">
+            database design and database schema design?
+          </span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -64,7 +68,8 @@ const MongoDBQuestion = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          4. What is mongoose? How does it work? Have you ever used it?
+          4. What is <span className="font-bold">mongoose?</span> How does it
+          work? Have you ever used it?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -107,7 +112,9 @@ const MongoDBQuestion = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          5. Why do we use Node MongoDB with React without Mysql?
+          5. Why do we use{" "}
+          <span className="font-bold">Node MongoDB with React</span> without
+          Mysql?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -133,7 +140,8 @@ const MongoDBQuestion = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          6. How Does MongoDB Differ From Traditional Relational Databases?
+          6. How Does MongoDB Differ From{" "}
+          <span className="font-bold">Traditional Relational Databases?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -169,7 +177,7 @@ const MongoDBQuestion = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          7.What is a collection in MongoDB?
+          7.What is a <span className="font-bold">collection</span> in MongoDB?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -183,7 +191,7 @@ const MongoDBQuestion = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          8. How does MongoDB store data?
+          8. How does MongoDB <span className="font-bold">store</span> data?
         </div>
         <div className="collapse-content text-3xl">
           <p>
@@ -198,7 +206,8 @@ const MongoDBQuestion = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          9. What is the primary key in MongoDB?
+          9. What is the <span className="font-bold">primary key</span> in
+          MongoDB?
         </div>
         <div className="collapse-content text-3xl">
           <p>

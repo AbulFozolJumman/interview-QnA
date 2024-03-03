@@ -8,7 +8,8 @@ const NextJSQuestions = () => {
         <div className="collapse bg-white">
           <input type="radio" name="my-accordion-1" defaultChecked />
           <div className="collapse-title text-3xl">
-            1. Can you use Next JS with Redux?
+            1. Can you use Next JS with{" "}
+            <span className="font-bold">Redux?</span>
           </div>
           <div className="collapse-content text-3xl">
             <p>Yes, it is possible to use Next JS with Redux.</p>
@@ -17,7 +18,8 @@ const NextJSQuestions = () => {
         <div className="collapse bg-white">
           <input type="radio" name="my-accordion-1" />
           <div className="collapse-title text-3xl">
-            2. How can a custom error page be created in Next JS?
+            2. How can a <span className="font-bold">custom error page</span> be
+            created in Next JS?
           </div>
           <div className="collapse-content text-3xl">
             <p>
@@ -34,7 +36,7 @@ const NextJSQuestions = () => {
         <div className="collapse bg-white">
           <input type="radio" name="my-accordion-1" />
           <div className="collapse-title text-3xl">
-            3. What do you mean by SSR?
+            3. What do you mean by <span className="font-bold">SSR?</span>
           </div>
           <div className="collapse-content text-3xl">
             <p>
@@ -48,7 +50,8 @@ const NextJSQuestions = () => {
         <div className="collapse bg-white">
           <input type="radio" name="my-accordion-1" />
           <div className="collapse-title text-3xl">
-            4. How can serverless mode be implemented?
+            4. How can <span className="font-bold">serverless mode</span> be
+            implemented?
           </div>
           <div className="collapse-content text-3xl">
             <p>
@@ -60,7 +63,8 @@ const NextJSQuestions = () => {
         <div className="collapse bg-white">
           <input type="radio" name="my-accordion-1" />
           <div className="collapse-title text-3xl">
-            5. What is meant by Styled JSX in Next JS?
+            5. What is meant by <span className="font-bold">Styled JSX</span> in
+            Next JS?
           </div>
           <div className="collapse-content text-3xl">
             <p>
@@ -75,7 +79,8 @@ const NextJSQuestions = () => {
         <div className="collapse bg-white">
           <input type="radio" name="my-accordion-1" />
           <div className="collapse-title text-3xl">
-            6. Is Next JS backend, frontend, or full-stack?
+            6. Is Next JS{" "}
+            <span className="font-bold">backend, frontend, or full-stack?</span>
           </div>
           <div className="collapse-content text-3xl">
             <p>
@@ -89,8 +94,9 @@ const NextJSQuestions = () => {
         <div className="collapse bg-white">
           <input type="radio" name="my-accordion-1" />
           <div className="collapse-title text-3xl">
-            7. Differentiate between imperative and declarative programming. And
-            what kind is used in React?
+            7. Differentiate between{" "}
+            <span className="font-bold">imperative and declarative</span>{" "}
+            programming. And what kind is used in React?
           </div>
           <div className="collapse-content text-3xl">
             <p>
@@ -107,7 +113,8 @@ const NextJSQuestions = () => {
         <div className="collapse bg-white">
           <input type="radio" name="my-accordion-1" />
           <div className="collapse-title text-3xl">
-            8. What types of pre-rendering are available in Next JS?
+            8. What types of <span className="font-bold">pre-rendering</span>{" "}
+            are available in Next JS?
           </div>
           <div className="collapse-content text-3xl">
             <p>
@@ -119,8 +126,9 @@ const NextJSQuestions = () => {
         <div className="collapse bg-white">
           <input type="radio" name="my-accordion-1" />
           <div className="collapse-title text-3xl">
-            9. Differentiate between the pre-rendering types available in Next
-            JS.
+            9. Differentiate between the{" "}
+            <span className="font-bold">pre-rendering types</span> available in
+            Next JS.
           </div>
           <div className="collapse-content text-3xl">
             <p>
@@ -140,7 +148,8 @@ const NextJSQuestions = () => {
         <div className="collapse bg-white">
           <input type="radio" name="my-accordion-1" />
           <div className="collapse-title text-3xl">
-            10. What is Next.js, and how is it different from React?
+            10. What is <span className="font-bold">Next.js</span>, and how is
+            it different from React?
           </div>
           <div className="collapse-content text-3xl">
             <p>
@@ -163,7 +172,8 @@ const NextJSQuestions = () => {
         <div className="collapse bg-white">
           <input type="radio" name="my-accordion-1" />
           <div className="collapse-title text-3xl">
-            11. What are the advantages of using Next.js over React?
+            11. What are the <span className="font-bold">advantages</span> of
+            using Next.js over React?
           </div>
           <div className="collapse-content text-3xl">
             <p>
@@ -179,7 +189,8 @@ const NextJSQuestions = () => {
         <div className="collapse bg-white">
           <input type="radio" name="my-accordion-1" />
           <div className="collapse-title text-3xl">
-            12. How do you create a new Next.js application?
+            12. How do you create a{" "}
+            <span className="font-bold">new Next.js</span> application?
           </div>
           <div className="collapse-content text-3xl">
             <p>
@@ -193,8 +204,11 @@ const NextJSQuestions = () => {
         <div className="collapse bg-white">
           <input type="radio" name="my-accordion-1" />
           <div className="collapse-title text-3xl">
-            13. What are the key differences between client-side rendering (CSR)
-            and server-side rendering (SSR) in Next.js?
+            13. What are the key differences between{" "}
+            <span className="font-bold">
+              client-side rendering (CSR) and server-side rendering (SSR)
+            </span>{" "}
+            in Next.js?
           </div>
           <div className="collapse-content text-3xl">
             <p>
@@ -213,8 +227,10 @@ const NextJSQuestions = () => {
         <div className="collapse bg-white">
           <input type="radio" name="my-accordion-1" />
           <div className="collapse-title text-3xl">
-            14. What are the performance optimization techniques you can use in
-            a Next.js application, and why are they important?
+            14. What are the{" "}
+            <span className="font-bold">performance optimization</span>{" "}
+            techniques you can use in a Next.js application, and why are they
+            important?
           </div>
           <div className="collapse-content text-3xl">
             <p>
@@ -232,7 +248,8 @@ const NextJSQuestions = () => {
         <div className="collapse bg-white">
           <input type="radio" name="my-accordion-1" />
           <div className="collapse-title text-3xl">
-            15. How do you create dynamic routes in the next JS?
+            15. How do you create{" "}
+            <span className="font-bold">dynamic routes</span> in the next JS?
           </div>
           <div className="collapse-content text-3xl">
             <p>
