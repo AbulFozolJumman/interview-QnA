@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Container from "../components/Shared/Container/Container";
 
 const NodeQuestions = () => {
@@ -6,219 +7,201 @@ const NodeQuestions = () => {
       <div className="collapse">
         <input type="radio" name="my-accordion-1" defaultChecked />
         <div className="collapse-title text-3xl">
-          1.What is <span className="font-bold">Nodejs?</span>
+          1. What is <span className="font-bold">Nodejs?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
-            Ans: Node.js is an open-source, cross-platform JavaScript runtime
-            environment and library to run web applications outside the client’s
-            browser. Ryan Dahl developed it in 2009.
+            Node.js is an open-source, server-side JavaScript runtime
+            environment built on Chrome's V8 JavaScript engine. It allows
+            developers to run JavaScript code outside of a browser and execute
+            server-side applications.
           </p>
         </div>
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          2.<span className="font-bold">Node vs javascript.</span>
+          2.<span className="font-bold"> Node vs javascript.</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
-            Ans: JavaScript is primarily used for client-side programming, while
-            Node. js allows developers to build server-side applications using
-            JavaScript <br />
-            Node: <br />
-            i. Nodejs is not a language it is a cross-platform open-source
-            server-side runtime environment. <br />
-            ii. Nodejs supports creating highly scalable server-side JavaScript
-            applications which are event-driven and asynchronous. Nodejs helps
-            to create back-end services. <br />
-            iii. NodeJs uses V8 engine which enables it to parse and run
-            JavaScript code. <br />
-            iv. NodeJs are generally used for cross-platform data-intensive
-            real-time applications. <br />
-            <br />
-            Javascript: <br />
-            i. Java script is a lightweight object-oriented scripting language
-            it is used to build a dynamic HTML page <br />
-            ii. All browsers have an in-built JavaScript engine. <br />
+            - JavaScript is a programming language for scripting within web
+            browsers whereas NodeJS is a runtime environment enabling
+            server-side JavaScript execution. <br />
+            - Javascript executes client-side, handling interactions and dynamic
+            content. NodeJS is used for building server-side applications.
+            <br />- JavaScript is used for front-end development, including user
+            interface interactions. Node.js is commonly used for back-end
+            development, powering web servers, APIs, and real-time applications.
           </p>
         </div>
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          3.Nodejs{" "}
+          3. Nodejs{" "}
           <span className="font-bold">single threaded or multi threaded?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
-            Ans: Nodejs is single-threaded but behind the scenes its behavior is
-            multithreaded. Nodejs has two concepts asynchronous and nonblocking
-            I/O. Nodejs can handle more than one request. Nodejs can’t handle at
-            the same time more than one CPU-intensive task. And libuv library is
-            used for multithreaded tasks.
+            Node.js is single-threaded by default. This means that it operates
+            on a single thread to handle all client requests. However, it
+            utilizes asynchronous, event-driven architecture, allowing it to
+            handle many connections simultaneously without blocking the
+            execution flow.
           </p>
         </div>
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          4.NodeJs is{" "}
+          4. NodeJs is{" "}
           <span className="font-bold">blocking or non-blocking?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
-            Ans: Node.js is non-blocking. Node.js operates on a single thread
-            and utilizes an event-driven, non-blocking I/O model. This means
-            that Node.js can handle multiple connections and I/O operations
-            concurrently without getting blocked, allowing it to serve many
-            clients efficiently.
+            Node.js is non-blocking, meaning that it doesn't wait for I/O
+            operations (such as reading files or making network requests) to
+            complete before moving on to execute other code. Instead, it
+            utilizes an event-driven, asynchronous architecture.
           </p>
         </div>
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          5.What is <span className="font-bold">Npm?</span>
+          5. What is <span className="font-bold">Npm?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
-            Ans: npm stands for Node Package Manager. It is the default package
-            manager for Node.js, used for installing, managing, and sharing
-            packages and libraries. npm is a command-line tool that comes
-            bundled with Node.js installation.
+            NPM stands for Node Package Manager, npm is a package manager for
+            Node.js that allows developers to easily install, manage, and share
+            reusable JavaScript code packages.
           </p>
         </div>
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          6.<span className="font-bold">sql vs nosql.</span>
+          6. <span className="font-bold">SQL vs NoSQL.</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
-            Ans: SQL (Structured Query Language) and NoSQL (Not Only SQL) are
-            two types of database management systems, each with its own
-            characteristics, strengths, and use cases:
+            - SQL is Relational databases, meaning data is organized in tables
+            with rows and columns. NoSQL is Non-relational databases, offering
+            more flexibility. Data can be stored in various formats like
+            key-value pairs, documents(JSON) or graphs. <br />
+            - SQL requires a predefined and fixed schema for the data. But NoSQL
+            Schema is often flexible and dynamic. <br />
+            - SQL Uses Structured Query Language (SQL) for querying and
+            manipulating data. NoSQL doesn't rely on a single language. Each
+            type of NoSQL database might have its own query language or API for
+            accessing data. <br />- SQL is typically vertically scalable whereas
+            NoSQL is often horizontally scalable.
           </p>
         </div>
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          7.what will you do if the{" "}
+          7. What will you do if the{" "}
           <span className="font-bold">server side crushes?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
-            Ans: I will think fast and see what could be the cause of the
-            problem then Restart the Server: <br />
-            Implement Fixes: <br />
-            Monitor for Stability: Continuously monitor the server and
-            application performance after the restart to ensure stability and
-            prevent further crashes. Use monitoring tools to track resource
-            utilization, error rates, and other relevant metrics.
+            If the server-side crashes in a Node.js application, the first step
+            is to identify the root cause of the crash by checking server logs
+            for error messages. Once the issue is understood, I will immediately
+            restart the server. Then I will implement error handling and
+            recovery mechanisms in the code to gracefully handle errors and
+            prevent future crashes.
           </p>
         </div>
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          8.How does the <span className="font-bold">API work?</span>
+          8. How does the <span className="font-bold">API work?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
-            Ans: APIs work by sharing data between applications, systems, and
-            devices. This happens through a request and response cycle. A user
-            initiates a request for data by interacting with an application. The
-            request is sent to the API, which retrieves the data and returns it
-            to the user.
+            API stands for application programming interface. API works like a
+            waiter taking orders at a restaurant from the customer. APIs act
+            like that waiter, relaying on requests to a server and bringing back
+            the prepared data for the app. It's a simple exchange of requests
+            and responses that power the magic behind many online features.
           </p>
         </div>
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          9.What is <span className="font-bold">CRUD?</span>
+          9. What is <span className="font-bold">CRUD?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
-            Ans: CRUD stands for Create, Read, Update, and Delete. It represents
-            the four basic operations that can be performed on data in a
-            persistent storage system, such as a database.
+            CRUD stands for Create, Read, Update, and Delete, which are the four
+            basic operations performed on data in a database. <br />
+            - Create means inserting new data into a database. <br />
+            - Read means retrieving existing data from a database. <br />
+            - Update means modifying existing data in a database. <br />- Delete
+            means removing existing data from a database.
           </p>
         </div>
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          10.<span className="font-bold">Get vs post.</span>
+          10.<span className="font-bold"> Get vs post.</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
-            Ans: GET Method: <br />
-            i. The GET method is used to request data from a specified resource.{" "}
-            <br />
-            ii. When a client sends a GET request to the server, it retrieves
-            data from the server without modifying it. <br />
-            iii. GET requests are typically used for fetching data, such as
-            retrieving a web page, fetching search results, or accessing
-            resources that are read-only. <br />
-            <br />
-            POST Method: <br />
-            i. The POST method is used to submit data to be processed by a
-            specified resource. <br />
-            ii. When a client sends a POST request to the server, it submits
-            data to the server, which may result in the creation of a new
-            resource, update of an existing resource, or execution of a
-            server-side operation.
+            - GET means asking a librarian for a specific book. It retrieves
+            data from existing data without modifying anything. GET data travels
+            in the URL itself, limited in size and visible to everyone. <br />-
+            POST means giving the librarian a new book to add to the collection.
+            It sends data to create or update something on the server. POST data
+            goes hidden in the request body, offering larger capacity and
+            security.
           </p>
         </div>
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          11.What is the difference between{" "}
+          11. What is the difference between{" "}
           <span className="font-bold">PUT and Patch?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
-            Ans: The main difference between the PUT and PATCH HTTP methods is
-            their semantics and usage for updating resources in RESTful APIs.{" "}
-            <br />
-            <br />
-            PUT Method: <br />
-            i. The PUT method is used to update or replace an existing resource
-            entirely with a new representation. <br /> <br />
-            PATCH Method: <br />
-            i. The PATCH method is used to apply partial modifications to an
-            existing resource.
+            Both PUT and PATCH used to update data, but they approach
+            differently. <br />
+            - PUT means completely replacing a book on a shelf with a new one.
+            It replaces the entire resource with the data we provide. PUT
+            requests require sending the complete data, even for just changing a
+            small part. <br />- PATCH means carefully fixing a specific page in
+            a book. It applies specific changes to specific parts of a resource
+            without needing the entire data. PATCH requests only send the
+            details of what needs to be modified, making them more efficient for
+            partial updates.
           </p>
         </div>
       </div>
       <div className="collapse">
         <input type="radio" name="my-accordion-1" />
         <div className="collapse-title text-3xl">
-          12.How will you <span className="font-bold">secure an API?</span>
+          12. How will you <span className="font-bold">secure an API?</span>
         </div>
         <div className="collapse-content text-3xl">
           <p>
-            Ans: Securing an API implements various measures to protect it from
-            unauthorized access, data breaches, and other security threats. To
-            secure an API. we need to follow some steps. <br />
-            i. Always Use a Gateway. <br />
-            ii. Always Use a Central OAuth Server. <br />
-            iii. Only Use JSON Web Tokens Internally. <br />
-            iv. Use Scopes for Coarse-Grained Access Control. <br />
-            v. Use Claims for Fine-Grained Access Control at the API Level.{" "}
-            <br />
-            vi. Trust No One. <br />
-            vii. Create or Reuse Libraries for JWT Validation. <br />
-            viii. Do Not Mix Authentication Methods. <br />
-            ix. Protect All APIs <br />
-            x. Issue JWTs for Internal Clients Inside Your Network <br />
-            xi. Use JSON Web Key Sets for Key Distribution <br />
-            xii. Keep Your Tokens Secure
+            To secure an API I can take steps like: <br />
+            - Implement robust mechanisms like OAuth, API keys, or JWTs to
+            verify user identity and access rights. <br />
+            - I will grant users only the minimum permissions required for their
+            specific tasks. <br />
+            - I will sanitize and validate all user input to prevent injection
+            attacks. <br />- I will follow secure coding practices to avoid
+            common vulnerabilities.
           </p>
         </div>
       </div>
