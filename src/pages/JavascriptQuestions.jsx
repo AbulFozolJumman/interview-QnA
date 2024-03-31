@@ -24,11 +24,12 @@ const JavascriptQuestions = () => {
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
-            JavaScript works by running code in the browser. When you visit a
-            webpage, the browser reads and executes the JavaScript instructions.
-            This code can make the webpage interactive, respond to your actions,
-            and communicate with the internet, enhancing your overall web
-            experience.
+            JavaScript works by running code in the browser. JavaScript engines
+            (like V8, SpiderMonkey, and JavaScriptCore) parse, optimize, and
+            execute the code. JavaScript interacts with the Document Object
+            Model (DOM) to modify web page elements, respond to user actions,
+            and handle asynchronous tasks. It allows variable declarations,
+            function creation, and object manipulation.
           </p>
         </div>
       </div>
@@ -56,12 +57,9 @@ const JavascriptQuestions = () => {
         </div>
         <div className="collapse-content bg-white text-3xl">
           <p>
-            The double equal(‘==’) operator tests for abstract equality. It does
-            the necessary type conversions before doing the equality comparison.{" "}
-            <br />
-            The triple equal(‘===’) operator tests for strict equality. It will
-            not do the type conversion hence if the two values are not of the
-            same type when compared, it will return false.
+            The double equal(‘==’) It compares only values without considering
+            the data type. <br />
+            The triple equal(‘===’) It compares both values and data types.
           </p>
         </div>
       </div>
