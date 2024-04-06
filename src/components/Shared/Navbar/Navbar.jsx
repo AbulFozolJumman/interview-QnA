@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="max-w-[2520px] xl:px-28 md:px-10 sm:px-2 lg:py-2 w-full px-4 bg-white text-black text-3xl mx-auto">
+    <div className="max-w-[2520px] xl:px-28 md:px-10 sm:px-2 lg:py-2 w-full px-4 bg-white text-black text-xl mx-auto">
       <div className="relative flex items-center justify-between">
         <Link
           to="/"
@@ -25,7 +25,7 @@ const Navbar = () => {
             <h2 className="text-xl font-bold">Interview Questions</h2>
           </div>
         </Link>
-        <ul className="items-center hidden space-x-8 lg:flex text-black text-3xl">
+        <ul className="items-center hidden space-x-8 lg:flex text-black text-xl">
           <li>
             <NavLink
               to="/"
@@ -43,7 +43,17 @@ const Navbar = () => {
               title=""
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-              JAVASCRIPT
+              JavaScript
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/es6-question"
+              aria-label=""
+              title=""
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              ES6
             </NavLink>
           </li>
           <li>
@@ -63,7 +73,7 @@ const Navbar = () => {
               title=""
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-              REACT
+              React.js
             </NavLink>
           </li>
           <li>
@@ -73,7 +83,7 @@ const Navbar = () => {
               title=""
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-              NODE JS
+              Node.js
             </NavLink>
           </li>
           <li>
@@ -83,7 +93,7 @@ const Navbar = () => {
               title=""
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-              EXPRESS JS
+              Express.js
             </NavLink>
           </li>
           <li>
@@ -93,7 +103,7 @@ const Navbar = () => {
               title=""
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-              MONGODB
+              MongoDB
             </NavLink>
           </li>
           <li>
@@ -103,7 +113,7 @@ const Navbar = () => {
               title=""
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-              NEXT JS
+              Next.js
             </NavLink>
           </li>
         </ul>
@@ -121,7 +131,7 @@ const Navbar = () => {
             <li>
               <button
                 onClick={handleLogOut}
-                className="btn btn-outline hidden lg:block btn-sm px-5 rounded-3xl text-black text-3xl hover:bg-[#A81C51] hover:border-none my-4 uppercase"
+                className="btn btn-outline hidden lg:block btn-sm px-5 rounded-3xl text-black text-xl hover:bg-[#A81C51] hover:border-none my-4 uppercase"
               >
                 Logout
               </button>
@@ -129,7 +139,7 @@ const Navbar = () => {
           </div>
         ) : (
           // <Link to="/login">
-          //   <button className="btn btn-outline hidden lg:block btn-sm px-5 rounded-3xl text-black text-3xl hover:bg-[#A81C51] hover:border-none my-4 uppercase disabled">
+          //   <button className="btn btn-outline hidden lg:block btn-sm px-5 rounded-3xl text-black text-xl hover:bg-[#A81C51] hover:border-none my-4 uppercase disabled">
           //     Login
           //   </button>
           // </Link>
@@ -143,7 +153,7 @@ const Navbar = () => {
             className="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-deep-purple-50 focus:bg-deep-purple-50"
             onClick={() => setIsMenuOpen(true)}
           >
-            <svg className="w-5 text-black text-3xl" viewBox="0 0 24 24">
+            <svg className="w-5 text-black text-xl" viewBox="0 0 24 24">
               <path
                 fill="currentColor"
                 d="M23,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h22c0.6,0,1,0.4,1,1S23.6,13,23,13z"
@@ -283,7 +293,7 @@ const Navbar = () => {
                         <li>
                           <button
                             onClick={handleLogOut}
-                            className="btn btn-outline btn-sm px-5 rounded-3xl text-black text-3xl hover:bg-[#A81C51] hover:border-none uppercase -ml-2"
+                            className="btn btn-outline btn-sm px-5 rounded-3xl text-black text-xl hover:bg-[#A81C51] hover:border-none uppercase -ml-2"
                           >
                             Logout
                           </button>
@@ -291,7 +301,7 @@ const Navbar = () => {
                       </>
                     ) : (
                       // <Link to="/login">
-                      //   <button className="btn btn-outline btn-sm px-5 rounded-3xl text-black text-3xl hover:bg-[#A81C51] hover:border-none my-4 -ml-2 uppercase">
+                      //   <button className="btn btn-outline btn-sm px-5 rounded-3xl text-black text-xl hover:bg-[#A81C51] hover:border-none my-4 -ml-2 uppercase">
                       //     Login
                       //   </button>
                       // </Link>
