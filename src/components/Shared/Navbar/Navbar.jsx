@@ -319,3 +319,18 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+// <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
+//   <label className="grow px-4 md:text-[18px]" htmlFor="collapse">
+
+//   </label>
+//   <input
+//     className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
+//     type="checkbox"
+//     name="collapse"
+//     id="collapse"
+//   />
+//   <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
+
+//   </div>
+// </div>
