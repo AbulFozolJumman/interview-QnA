@@ -6,9 +6,9 @@ const ReactQuestions = () => {
     <Container>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse">
-          01. What is <span className="font-bold">React js?</span> Tell us about
+          01. What is <span className="font-bold">React JS?</span> Tell us about
           <span className="font-bold"> advantages and disadvantages</span> of
-          using react js.
+          using react JS.
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -42,7 +42,7 @@ const ReactQuestions = () => {
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse2">
-          02. Why will you <span className="font-bold"> select ReactJS?</span>
+          02. Why will you <span className="font-bold"> select React JS?</span>
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
