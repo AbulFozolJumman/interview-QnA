@@ -420,3 +420,7 @@ const ES6Questions = () => {
 };
 
 export default ES6Questions;
+
+{
+  /* <span className="font-bold"></span> */
+}

@@ -8,7 +8,7 @@ const ReactQuestions = () => {
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse">
           01. What is <span className="font-bold">React JS?</span> Tell us about
           <span className="font-bold"> advantages and disadvantages</span> of
-          using react JS.
+          using React JS.
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -33,7 +33,7 @@ const ReactQuestions = () => {
           library. <br />
           <span className="font-bold">Disadvantages:</span> <br />
           - React is just a library, not a full framework. <br />
-          - Its library is very large and takes time to understand.It can be
+          - Its library is very large and takes time to understand. It can be
           little difficult for the new programmers to understand. <br />
           - Coding gets complex as it uses inline templating and JSX. <br />-
           Does Not Support SEO. React, by design, was not built with SEO in
