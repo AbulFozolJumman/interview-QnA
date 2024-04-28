@@ -237,8 +237,8 @@ const NextJSQuestions = () => {
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse8">
-          08. What is a{" "}
-          <span className="font-bold">Higher-order Function?</span>
+          08. What are the <span className="font-bold">benefits </span>of using
+          Next.js?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -247,17 +247,20 @@ const NextJSQuestions = () => {
           id="collapse8"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          A higher-order function is a function that either takes another
-          function as an argument or returns a function as its result.
-          Higher-order functions allow us to create more modular, reusable, and
-          flexible code. Common examples of higher-order functions include map,
-          filter, and reduce in JavaScript.
+          Next.js offers several advantages. One of the biggest perks is its
+          speed. Next.js can make websites load faster by pre-rendering some
+          content and only loading other parts when needed. Next.js also great
+          for search engine optimization (SEO) since it makes it easier for
+          search engines to understand our website's content. It also simplifies
+          development by providing tools and features that make it quicker and
+          easier to build websites. Overall, Next.js help us create websites
+          that are fast, SEO-friendly, and enjoyable to develop.
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse9">
-          09. Difference between{" "}
-          <span className="font-bold">local storage and Session storage.</span>
+          09. Explain how <span className="font-bold">dynamic routes </span>work
+          in the Next.js?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -266,22 +269,16 @@ const NextJSQuestions = () => {
           id="collapse9"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          1. local storage provides persistent storage across browser
-          sessions,tabs and windows, while session storage offers temporary
-          storage limited to the current session within a single tab or window.{" "}
-          <br />
-          2. Data stored in local storage remains available across page reloads
-          and across different browser sessions until the user manually clears
-          the browser cache or until your web app explicitly clears the data. On
-          the other hand, Session storage is temporary and exists only for the
-          duration of a single browsing session. It is automatically cleared
-          when the user closes the tab or window.
+          In Next.js, square brackets in our file path like "[id]" create
+          dynamic routes. This let us match any value, like product IDs or blog
+          post slugs, and render unique pages without needing a separate file
+          for each one. It's like a wildcard for creating pages on the fly.
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse10">
-          10. What are <span className="font-bold">cookies</span>? And why will
-          you use it?
+          10. What is <span className="font-bold">server side rendering </span>
+          and is it <span className="font-bold">important</span>?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -290,18 +287,18 @@ const NextJSQuestions = () => {
           id="collapse10"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          Cookies are small pieces of data stored on a user's device by websites
-          they visit. These data are sent back to the originating website or
-          another website that recognizes that cookie. <br />
-          We use cookies for enabling features like user authentication,
-          remembering user preferences, tracking user behavior, and
-          personalizing website content.
+          Server-side rendering (SSR) is a web development technique where the
+          initial content of a webpage is generated on the server, not the
+          user's browser. <br />
+          SSR is important for improving initial loading performance and SEO.
+          Also works well for users with slow internet or older devices.
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse11">
-          11. What is{" "}
-          <span className="font-bold">object-oriented programming?</span>
+          11. Explain the concept of{" "}
+          <span className="font-bold">prefetching </span>of the Next.jS and How
+          it impacts performance?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -310,18 +307,17 @@ const NextJSQuestions = () => {
           id="collapse11"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          Object-Oriented Programming (OOP) is a fundamental programming
-          paradigm used in computer science. It revolves around the concept of
-          classes and objects. Classes define shared properties and methods,
-          while objects represent specific instances with unique values. OOP
-          emphasizes encapsulation, inheritance, polymorphism, and abstraction
-          to organize and manage code efficiently, promote reusability.
+          Prefetching in Next.js fetches data and assets for a page in the
+          background, improving performance by reducing loading times for future
+          navigation.
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse12">
-          12. Difference between{" "}
-          <span className="font-bold">Array vs LinkedList.</span>
+          12. Explain the purpose of{" "}
+          <span className="font-bold">"static site generation" (SSG) </span> and
+          "server-side rendering" (SSR) in the context of Next.js, and when
+          would you use each approach?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -330,19 +326,26 @@ const NextJSQuestions = () => {
           id="collapse12"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          Arrays store elements in contiguous memory locations, allowing fast
-          access to an element at a specific index. They have a fixed size and
-          are efficient for direct access. In contrast, linked lists are less
-          rigid, with elements not stored contiguously. They use pointers to
-          reference the next element, making them dynamic and suitable for
-          frequent insertions and deletions. While arrays excel in access time,
-          linked lists offer flexibility
+          <span className="font-bold">Static site generation(SSG)</span>{" "}
+          generates HTML pages before the user requests the page. This is faster
+          because the content is already available when the user navigates to
+          the page. <br />
+          <span className="font-bold">Server-side rendering(SSR)</span> renders
+          HTML pages on the server and sends fully rendered HTML to the client
+          for each request, providing dynamic content and flexibility. <br />
+          We can use both techniques, using SSG for static content and SSR for
+          dynamic content within the same application to get the benefits of
+          both approaches.
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse13">
-          13. How will you <span className="font-bold">debug</span> a JavaScript
-          application?
+          13. What are the{" "}
+          <span className="font-bold">
+            key differences between client-side rendering (CSR) and server-side
+            rendering (SSR){" "}
+          </span>{" "}
+          in Next.js?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -351,30 +354,18 @@ const NextJSQuestions = () => {
           id="collapse13"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          Debugging a JavaScript application involves several techniques. First,
-          use breakpoints in your code to pause execution at specific lines and
-          inspect variables. Visual Studio supports server-side debugging, while
-          the debugger keyword in JavaScript allows you to pause execution
-          directly in the browser. Secondly, using browser developer tools like
-          Chrome DevTools or Firefox Developer Tools provides powerful debugging
-          features such as breakpoints, stepping through code, inspecting
-          variables, and monitoring network activity. Additionally, console.log
-          statements are useful for logging information to the browser console
-          to track the flow of execution and inspect variable values at
-          different points in the code. Using debugger statements within the
-          code allows pausing execution and transferring control to the browser
-          debugger when reached. Furthermore, leveraging third-party tools like
-          ESLint or TypeScript for static code analysis can help catch syntax
-          errors and potential bugs early in the development process. Lastly,
-          testing frameworks such as Jest or Mocha combined with tools like
-          Selenium or Cypress for automated testing can help identify and fix
-          issues systematically across different parts of the application.
+          Client-side rendering (CSR) renders pages on the client side using
+          JavaScript, while server-side rendering (SSR) generates HTML on the
+          server before sending it to the client.
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse14">
-          14. What is <span className="font-bold">template literal</span> in
-          ES6?
+          14. What are the{" "}
+          <span className="font-bold">
+            performance optimization techniques{" "}
+          </span>
+          you can use in a Next.js application, and why are they important?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -383,17 +374,16 @@ const NextJSQuestions = () => {
           id="collapse14"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          Template literals, introduced in ES6, allow for creating strings with
-          backticks (` `) instead of single or double quotes. They support
-          embedded expressions using `${}` syntax and preserve white space and
-          line breaks, making it easier to create dynamic and multi-line strings
-          in JavaScript.
+          Performance optimization techniques in Next.js include code splitting,
+          image optimization, and caching. This is important for improving page
+          load times and user experience.
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse15">
-          15. Difference between{" "}
-          <span className="font-bold">Spread Operator and rest operator.</span>
+          15. How do you{" "}
+          <span className="font-bold">create dynamic routes </span>in the
+          Next.js?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -402,12 +392,9 @@ const NextJSQuestions = () => {
           id="collapse15"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          The spread operator (...) is used to expand arrays and objects into
-          individual elements, while the rest operator (...) gathers multiple
-          function arguments into an array. <br />
-          Spread operator spreads elements out, enabling easy copying or
-          merging, while rest operator gathers elements into a single variable,
-          useful for handling variable function arguments or destructuring.
+          To create a dynamic route, we need to create a file within the pages
+          directory and use square brackets [] to indicate dynamic segments in
+          the route.
         </div>
       </div>
     </Container>
