@@ -22,7 +22,11 @@ const Navbar = () => {
           className="inline-flex items-center"
         >
           <div className="flex items-center justify-center">
-            <img className="w-16" src="/src/assets/QnA.png" alt="" />
+            <img
+              className="w-16"
+              src="https://i.ibb.co/zPfjK6k/Qn-A-f9c2b4fe.png"
+              alt=""
+            />
           </div>
         </Link>
         <ul className="items-center hidden space-x-8 lg:flex text-black text-xl">
