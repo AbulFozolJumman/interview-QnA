@@ -22,7 +22,7 @@ const Navbar = () => {
           className="inline-flex items-center"
         >
           <div className="flex items-center justify-center">
-            <h2 className="text-xl font-bold">Interview Questions</h2>
+            <img className="w-16" src="/src/assets/QnA.png" alt="" />
           </div>
         </Link>
         <ul className="items-center hidden space-x-8 lg:flex text-black text-xl">
@@ -73,7 +73,7 @@ const Navbar = () => {
               title=""
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-              React.js
+              React
             </NavLink>
           </li>
           <li>
@@ -83,7 +83,7 @@ const Navbar = () => {
               title=""
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-              Node.js
+              Node
             </NavLink>
           </li>
           <li>
@@ -93,7 +93,7 @@ const Navbar = () => {
               title=""
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-              Express.js
+              Express
             </NavLink>
           </li>
           <li>
@@ -113,7 +113,7 @@ const Navbar = () => {
               title=""
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
-              Next.js
+              Next
             </NavLink>
           </li>
         </ul>
@@ -230,7 +230,7 @@ const Navbar = () => {
                         title=""
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
-                        React.js
+                        React
                       </Link>
                     </li>
                     <li>
@@ -240,7 +240,7 @@ const Navbar = () => {
                         title=""
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
-                        Node.js
+                        Node
                       </Link>
                     </li>
                     <li>
@@ -250,7 +250,7 @@ const Navbar = () => {
                         title=""
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
-                        Express.js
+                        Express
                       </Link>
                     </li>
                     <li>
@@ -270,7 +270,7 @@ const Navbar = () => {
                         title=""
                         className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                       >
-                        Next.js
+                        Next
                       </Link>
                     </li>
                     {user ? (
