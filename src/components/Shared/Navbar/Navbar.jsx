@@ -1,6 +1,7 @@
 import { useContext, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProviders";
+import logo from "../../../assets/logo.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,11 +23,7 @@ const Navbar = () => {
           className="inline-flex items-center"
         >
           <div className="flex items-center justify-center">
-            <img
-              className="w-16"
-              src="https://i.ibb.co/zPfjK6k/Qn-A-f9c2b4fe.png"
-              alt=""
-            />
+            <img className="w-16" src={logo} alt="" />
           </div>
         </Link>
         <ul className="items-center hidden space-x-8 lg:flex text-black text-xl">
@@ -38,6 +35,26 @@ const Navbar = () => {
               className={({ isActive }) => (isActive ? "active" : "default")}
             >
               Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/html"
+              aria-label="HTML"
+              title="HTML"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              HTML
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/css"
+              aria-label="CSS"
+              title="CSS"
+              className={({ isActive }) => (isActive ? "active" : "default")}
+            >
+              CSS
             </NavLink>
           </li>
           <li>
@@ -208,6 +225,40 @@ const Navbar = () => {
                   <ul className="space-y-4">
                     <li>
                       <Link
+                        onClick={() => setIsMenuOpen(false)}
+                        to="/"
+                        aria-label=""
+                        title=""
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      >
+                        Home
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={() => setIsMenuOpen(false)}
+                        to="/html"
+                        aria-label=""
+                        title=""
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      >
+                        HTML
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={() => setIsMenuOpen(false)}
+                        to="/css"
+                        aria-label=""
+                        title=""
+                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
+                      >
+                        CSS
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        onClick={() => setIsMenuOpen(false)}
                         to="/js-question"
                         aria-label=""
                         title=""
@@ -218,6 +269,7 @@ const Navbar = () => {
                     </li>
                     <li>
                       <Link
+                        onClick={() => setIsMenuOpen(false)}
                         to="/es6-question"
                         aria-label=""
                         title=""
@@ -229,6 +281,7 @@ const Navbar = () => {
 
                     <li>
                       <Link
+                        onClick={() => setIsMenuOpen(false)}
                         to="/react-question"
                         aria-label=""
                         title=""
@@ -239,6 +292,7 @@ const Navbar = () => {
                     </li>
                     <li>
                       <Link
+                        onClick={() => setIsMenuOpen(false)}
                         to="/node-question"
                         aria-label=""
                         title=""
@@ -249,6 +303,7 @@ const Navbar = () => {
                     </li>
                     <li>
                       <Link
+                        onClick={() => setIsMenuOpen(false)}
                         to="/express-question"
                         aria-label=""
                         title=""
@@ -259,6 +314,7 @@ const Navbar = () => {
                     </li>
                     <li>
                       <Link
+                        onClick={() => setIsMenuOpen(false)}
                         to="/mongo-question"
                         aria-label=""
                         title=""
@@ -269,6 +325,7 @@ const Navbar = () => {
                     </li>
                     <li>
                       <Link
+                        onClick={() => setIsMenuOpen(false)}
                         to="/next-question"
                         aria-label=""
                         title=""

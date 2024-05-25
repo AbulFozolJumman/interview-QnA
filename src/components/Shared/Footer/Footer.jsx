@@ -1,51 +1,64 @@
+import icon from "../../../assets/internet-icon.png";
 const Footer = () => {
   return (
-    <footer className="footer footer-center p-10 text-black rounded bg-white">
-      <div className="grid grid-flow-col gap-4">
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
-      </div>
+    <footer className="footer footer-center p-10 pb-5 text-white bg-gray-500">
       <div>
-        <div className="grid grid-flow-col gap-4">
-          <a>
+        <div className="grid grid-flow-col gap-3 items-center">
+          <a
+            href="https://www.facebook.com/abulfozoljumman/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Facebook"
+          >
             <svg
+              className="h-6 w-6 fill-current hover:text-blue-600"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
               viewBox="0 0 24 24"
-              className="fill-current"
             >
-              <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+              <path d="M24 12a12 12 0 1 0-13.87 11.87v-8.41h-2.9V12h2.9V9.42c0-2.85 1.7-4.42 4.3-4.42 1.25 0 2.55.23 2.55.23v2.8h-1.44c-1.42 0-1.85.88-1.85 1.77V12h3.16l-.51 3.46h-2.65v8.41A12 12 0 0 0 24 12z" />
             </svg>
           </a>
-          <a>
+          <a
+            href="https://github.com/AbulFozolJumman/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
             <svg
+              className="h-6 w-6 fill-current hover:text-gray-400"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
               viewBox="0 0 24 24"
-              className="fill-current"
             >
-              <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+              <path d="M12 .297C5.373.297 0 5.67 0 12.297c0 5.302 3.438 9.8 8.205 11.387.6.111.82-.261.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.612-4.042-1.612-.546-1.387-1.333-1.757-1.333-1.757-1.09-.746.083-.73.083-.73 1.205.085 1.838 1.236 1.838 1.236 1.07 1.834 2.809 1.304 3.495.998.108-.775.418-1.305.76-1.605-2.665-.3-5.466-1.335-5.466-5.933 0-1.312.47-2.383 1.236-3.222-.124-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23.957-.266 1.98-.399 3-.405 1.02.006 2.043.139 3 .405 2.29-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.839 1.234 1.91 1.234 3.222 0 4.61-2.803 5.628-5.475 5.922.43.372.813 1.102.813 2.222 0 1.606-.014 2.898-.014 3.293 0 .319.217.694.825.576C20.565 22.092 24 17.592 24 12.297 24 5.67 18.627.297 12 .297z" />
             </svg>
           </a>
-          <a>
+          <a
+            href="https://www.linkedin.com/in/abul-fozol-jumman-414734279/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
             <svg
+              className="h-6 w-6 fill-current hover:text-blue-700"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
               viewBox="0 0 24 24"
-              className="fill-current"
             >
-              <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+              <path d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56c0 .95.79 1.72 1.77 1.72h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.23 0zM7.12 20.45H3.56V9.03h3.56v11.42zm-1.78-13A2.07 2.07 0 1 1 7.4 5.35a2.07 2.07 0 0 1-2.06 2.1zm15.56 13H17.9v-5.55c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.15 1.45-2.15 2.95v5.64h-3.56V9.03h3.42v1.56h.05c.48-.92 1.64-1.88 3.38-1.88 3.61 0 4.28 2.38 4.28 5.47v6.27z" />
             </svg>
+          </a>
+          <a
+            href="https://abul-fozol-jumman.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Portfolio"
+            className="w-8"
+          >
+            <img src={icon} alt="" />
           </a>
         </div>
       </div>
       <div>
-        <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+        <p> &copy; 2023 - Abul Fozol Jumman, All right reserved.</p>
       </div>
     </footer>
   );
