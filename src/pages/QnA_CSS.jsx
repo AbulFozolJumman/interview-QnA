@@ -6,7 +6,8 @@ const QnA_CSS = () => {
     <Container>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse">
-          01. What is the CSS <span className="font-bold">box model</span>?
+          01. What is the CSS <span className="font-bold">box model</span>? And
+          what are the different elements of a box model?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -25,8 +26,8 @@ const QnA_CSS = () => {
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse2">
-          02. What are the differences between{" "}
-          <span className="font-bold">var, let, and const</span>?
+          02. Difference between CSS{" "}
+          <span className="font-bold">flexbox vs grid</span>?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -35,17 +36,17 @@ const QnA_CSS = () => {
           id="collapse2"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          In JavaScript, let and const are block-scoped variables introduced in
-          ECMAScript 6 (ES6), while var is global scope or function scope. Let
-          allows reassigning values, whereas const is used for variables that
-          should not be reassigned. Var allows reassigning values and can be
-          hoisted.
+          - Flexbox is a Grid layout with a one-dimensional system either within
+          a row or a column. It is used for the components of an application.{" "}
+          <br />- CSS Grid Layout is a two-dimensional system along with rows
+          and columns. It is used for large-sized layouts.
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse3">
-          03. Why will you use
-          <span className="font-bold"> default parameters</span>?
+          03. Explain CSS <span className="font-bold">position property</span>?
+          What are some differences between{" "}
+          <span className="font-bold">absolute and relative</span> position?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -54,17 +55,23 @@ const QnA_CSS = () => {
           id="collapse3"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          Default parameters allow us to specify a default value for a function
-          parameter. This is useful when we want to provide a fallback value in
-          case the parameter is not provided when the function is called. It
-          helps prevent errors that may occur when attempting to use undefined
-          values in function logic.
+          The difference between absolute and relative position in CSS is that:{" "}
+          <br />
+          - Absolute: An element with absolute position is removed from the
+          normal flow and placed relative to the nearest positioned ancestor (an
+          element with a position other than static). If there is no such
+          ancestor, it is placed relative to the document body. The element can
+          be moved using the top, right, bottom, and left properties. <br />-
+          Relative: An element with relative position is placed relative to its
+          normal position in the flow. The element can be offset using the top,
+          right, bottom, and left properties, but other elements will not adjust
+          to fill the gap left by the element.
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse4">
-          04. How does the<span className="font-bold"> Spread operator</span>{" "}
-          work?
+          04. What is the <span className="font-bold">Hover effect</span>? What
+          is the purpose of the <span className="font-bold">active class</span>?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -73,13 +80,12 @@ const QnA_CSS = () => {
           id="collapse4"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          The spread operator (...) in JavaScript is used to expand iterable
-          objects (like arrays) into individual elements. It allows you to
-          unpack elements from an array or object and use them in places where
-          multiple elements or key-value pairs are expected. The spread operator
-          is commonly used for tasks like copying arrays, merging arrays,
-          passing function arguments, and creating new arrays or objects with
-          modified elements.
+          The hover effect is a CSS technique that allows us to change the
+          appearance or behavior of an element when the user moves the mouse
+          over it. <br />
+          active: In CSS, the "active" class serves the purpose of styling an
+          element when it is in an active state, usually when it is being
+          clicked or activated by the user.
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
