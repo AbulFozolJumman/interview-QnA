@@ -5,28 +5,8 @@ const QnA_CSS = () => {
   return (
     <Container>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
-        <label className="grow px-4 md:text-[18px]" htmlFor="collapse">
-          01. What is the CSS <span className="font-bold">box model</span>? And
-          what are the different elements of a box model?
-        </label>
-        <input
-          className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
-          type="checkbox"
-          name="collapse"
-          id="collapse"
-        />
-        <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          The CSS box model is a fundamental concept that describes the layout
-          and sizing of elements. It consists of four parts: content, padding,
-          border, and margin. The content area contains the actual content of
-          the element, while padding adds space between the content and the
-          border. The border surrounds the padding and content, and the margin
-          provides space between the element and other elements.
-        </div>
-      </div>
-      <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse2">
-          02. Difference between CSS{" "}
+          01. Difference between CSS{" "}
           <span className="font-bold">flexbox vs grid</span>?
         </label>
         <input
@@ -36,15 +16,15 @@ const QnA_CSS = () => {
           id="collapse2"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          - Flexbox is a Grid layout with a one-dimensional system either within
-          a row or a column. It is used for the components of an application.{" "}
+          - Flexbox is a layout with a one-dimensional system either within a
+          row or a column. It is used for the components of an application.{" "}
           <br />- CSS Grid Layout is a two-dimensional system along with rows
           and columns. It is used for large-sized layouts.
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse3">
-          03. Explain CSS <span className="font-bold">position property</span>?
+          02. Explain CSS <span className="font-bold">position property</span>?
           What are some differences between{" "}
           <span className="font-bold">absolute and relative</span> position?
         </label>
@@ -69,6 +49,26 @@ const QnA_CSS = () => {
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
+        <label className="grow px-4 md:text-[18px]" htmlFor="collapse">
+          03. What is the CSS <span className="font-bold">box model</span>? And
+          what are the different elements of a box model?
+        </label>
+        <input
+          className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
+          type="checkbox"
+          name="collapse"
+          id="collapse"
+        />
+        <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
+          The CSS box model is a fundamental concept that describes the layout
+          and sizing of elements. It consists of four parts: content, padding,
+          border, and margin. The content area contains the actual content of
+          the element, while padding adds space between the content and the
+          border. The border surrounds the padding and content, and the margin
+          provides space between the element and other elements.
+        </div>
+      </div>
+      <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse4">
           04. What is the <span className="font-bold">Hover effect</span>? What
           is the purpose of the <span className="font-bold">active class</span>?
@@ -90,7 +90,9 @@ const QnA_CSS = () => {
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse5">
-          05. What is a <span className="font-bold">Prototype chain</span>?
+          05. What is a CSS <span className="font-bold">preprocessor</span>?
+          What are some
+          <span className="font-bold"> benefits of Sass</span>?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -99,18 +101,33 @@ const QnA_CSS = () => {
           id="collapse5"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          The prototype chain is a fundamental concept in JavaScript where
-          objects inherit properties and methods from their prototype objects.
-          When accessing a property or method on an object, JavaScript first
-          checks if it exists on the object itself. If not, it looks up the
-          prototype chain until it finds the property or reaches the end of the
-          chain.
+          A CSS preprocessor is a tool that extends the default capabilities of
+          CSS by allowing us to use variables, functions, mixins, loops, and
+          other features that make writing CSS more efficient and maintainable.
+          A CSS preprocessor compiles our code into plain CSS that browsers can
+          understand. <br />
+          SASS: Sass is one of the most popular CSS preprocessors, and it has
+          many benefits, such as: <br />
+          - It is compatible with all versions of CSS, so you can use any
+          existing CSS libraries or frameworks with Sass. <br />
+          - It offers a concise and elegant syntax that makes your code more
+          readable and organized. <br />
+          - It improves your productivity by reducing the amount of code you
+          have to write and avoiding repetition. <br />
+          - It makes your code easier to maintain and update by using variables,
+          mixins, and partials. <br />
+          - It improves your site performance by allowing you to minify and
+          compress your output CSS. <br />
+          - It has a large and active community that provides support,
+          documentation, and extensions. <br />- It allows you to customize
+          Bootstrap 4, one of the most popular front-end frameworks, by changing
+          its variables and mixins.
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse6">
-          06. Difference between{" "}
-          <span className="font-bold">class and object</span>.
+          06. What are the different types of{" "}
+          <span className="font-bold">Selectors</span> in CSS?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -119,16 +136,29 @@ const QnA_CSS = () => {
           id="collapse6"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          A class defines the structure and behavior of objects, while an object
-          is an instance of a class with specific state and behavior defined by
-          that class. Classes are used to create and organize objects with
-          similar characteristics and behaviors.
+          There are different types of selectors in CSS that are used to select
+          HTML elements based on various criteria. Some of the common types of
+          selectors are: <br />
+          - Element selector: selects elements based on their tag name, such as
+          p or h1. <br />
+          - Id selector: selects a unique element based on its id attribute,
+          prefixed with #, such as #header. <br />
+          - Class selector: selects one or more elements based on their class
+          attribute, prefixed with ., such as .button. <br />
+          - Universal selector: selects all elements on the page, using the *
+          symbol. <br />
+          - Group selector: selects multiple elements that share the same style
+          rules, separated by commas, such as h1, h2, p. <br />- Attribute
+          selector: selects elements based on their attribute or attribute
+          value, using brackets, such as [href] or [type="text"]. - Pseudo-class
+          selector: selects elements based on their state, such as :hover or
+          :checked. <br />- Pseudo-element selector: selects and styles a part
+          of an element, such as ::before or ::first-line.
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse7">
-          07. Explain{" "}
-          <span className="font-bold">Call by value vs call by reference.</span>
+          07. What is CSS <span className="font-bold">specificity</span>?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -137,22 +167,18 @@ const QnA_CSS = () => {
           id="collapse7"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          In call by value, a copy of the value of the actual parameter is
-          passed to the function, so modifications to the parameter inside the
-          function do not affect the original value outside the function. This
-          method is commonly used for primitive data types like numbers and
-          strings. <br />
-          Conversely, call by reference involves passing a reference or memory
-          address to the original parameter, allowing modifications made inside
-          the function to directly affect the original value outside the
-          function. This approach is often used for complex data types like
-          arrays and objects.
+          CSS specificity is a measure of how specific a selector is when
+          determining which styles should be applied to an element. Specificity
+          is calculated based on the number of ID selectors, class selectors,
+          and element selectors used in the selector. Inline styles have the
+          highest specificity, followed by ID selectors, class selectors, and
+          element selectors. The most specific selector takes precedence.
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse8">
-          08. What is a{" "}
-          <span className="font-bold">Higher-order Function?</span>
+          08. What is a <span className="font-bold">Pseudo element</span>? Give
+          an example of a pseudo-element.
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -161,17 +187,20 @@ const QnA_CSS = () => {
           id="collapse8"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          A higher-order function is a function that either takes another
-          function as an argument or returns a function as its result.
-          Higher-order functions allow us to create more modular, reusable, and
-          flexible code. Common examples of higher-order functions include map,
-          filter, and reduce in JavaScript.
+          A pseudo-element in CSS is a keyword added to a selector that allows
+          you to style a specific part of the selected element. It's called
+          "pseudo" because it doesn't actually exist as a separate element in
+          the document's structure but allows for styling parts of an element as
+          if they were distinct elements. <br />
+          Example of a Pseudo-element <br />
+          One common pseudo-element is ::before. This pseudo-element allows you
+          to insert content before the content of an element.
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse9">
-          09. Difference between{" "}
-          <span className="font-bold">local storage and Session storage.</span>
+          09. How will you use <span className="font-bold">media queries</span>{" "}
+          to make a website responsive?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -180,22 +209,21 @@ const QnA_CSS = () => {
           id="collapse9"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          1. local storage provides persistent storage across browser
-          sessions,tabs and windows, while session storage offers temporary
-          storage limited to the current session within a single tab or window.{" "}
-          <br />
-          2. Data stored in local storage remains available across page reloads
-          and across different browser sessions until the user manually clears
-          the browser cache or until your web app explicitly clears the data. On
-          the other hand, Session storage is temporary and exists only for the
-          duration of a single browsing session. It is automatically cleared
-          when the user closes the tab or window.
+          Media queries are a CSS technique that allows us to apply different
+          styles depending on the browser and device environment. They are
+          commonly used to create responsive web design, which adapts to
+          different screen sizes and orientations. <br />
+          To use media queries, we need to specify a media type (such as screen
+          or print) and a media feature (such as width or height) that must
+          match for the CSS rules to apply. We can also use logical operators
+          (such as and, not, or) and ranges (such as min-width or max-width) to
+          combine multiple conditions.
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse10">
-          10. What are <span className="font-bold">cookies</span>? And why will
-          you use it?
+          10. How will you make{" "}
+          <span className="font-bold">font size responsive</span>?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -204,18 +232,19 @@ const QnA_CSS = () => {
           id="collapse10"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          Cookies are small pieces of data stored on a user's device by websites
-          they visit. These data are sent back to the originating website or
-          another website that recognizes that cookie. <br />
-          We use cookies for enabling features like user authentication,
-          remembering user preferences, tracking user behavior, and
-          personalizing website content.
+          The key methods for making font size responsive in CSS are: <br />
+          1. Using Relative Units (em, rem) <br />
+          2. Using Percentage (%) <br />
+          3. Using Viewport Units (vw, vh) <br />
+          4. Using CSS calc() Function <br />
+          5. Media Queries <br />
+          6. Using CSS clamp() Function
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse11">
-          11. What is{" "}
-          <span className="font-bold">object-oriented programming?</span>
+          11. Difference between{" "}
+          <span className="font-bold">transition and transform</span>.
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -224,18 +253,23 @@ const QnA_CSS = () => {
           id="collapse11"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          Object-Oriented Programming (OOP) is a fundamental programming
-          paradigm used in computer science. It revolves around the concept of
-          classes and objects. Classes define shared properties and methods,
-          while objects represent specific instances with unique values. OOP
-          emphasizes encapsulation, inheritance, polymorphism, and abstraction
-          to organize and manage code efficiently, promote reusability.
+          - The transition property is used to animate changes to CSS properties
+          over a specified duration. It defines the transition effect when a
+          property changes from one value to another, allowing for smooth and
+          gradual changes rather than abrupt ones. <br />- The transform
+          property is used to apply transformations to an element, such as
+          translating, rotating, scaling, or skewing. These transformations can
+          alter the appearance and position of an element without affecting the
+          layout around it.
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse12">
-          12. Difference between{" "}
-          <span className="font-bold">Array vs LinkedList.</span>
+          12. How will you{" "}
+          <span className="font-bold">
+            horizontally and vertically center a div
+          </span>{" "}
+          inside a div?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -244,19 +278,32 @@ const QnA_CSS = () => {
           id="collapse12"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          Arrays store elements in contiguous memory locations, allowing fast
-          access to an element at a specific index. They have a fixed size and
-          are efficient for direct access. In contrast, linked lists are less
-          rigid, with elements not stored contiguously. They use pointers to
-          reference the next element, making them dynamic and suitable for
-          frequent insertions and deletions. While arrays excel in access time,
-          linked lists offer flexibility
+          There are several methods to horizontally and vertically center a div
+          inside another div using CSS: <br />
+          1. Flexbox <br />
+          Parent: display: flex; justify-content: center; align-items: center;{" "}
+          <br />
+          2. Grid <br />
+          Parent: display: grid; place-items: center; <br />
+          3. Absolute Positioning with Transforms <br />
+          Parent: position: relative; <br />
+          Child: position: absolute; top: 50%; left: 50%; transform:
+          translate(-50%, -50%); <br />
+          4. Using Margins (For Known Dimensions) <br />
+          Parent: position: relative; <br />
+          Child: width: [width]; height: [height]; position: absolute; top: 50%;
+          left: 50%; margin-top: -[half-height]; margin-left: -[half-width];{" "}
+          <br />
+          5. Using Table Display <br />
+          Parent: display: table; width: 100%; height: 100%; <br />
+          Child: display: table-cell; vertical-align: middle; text-align:
+          center;
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse13">
-          13. How will you <span className="font-bold">debug</span> a JavaScript
-          application?
+          13. Difference between <span className="font-bold">id and class</span>
+          ?
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -265,30 +312,16 @@ const QnA_CSS = () => {
           id="collapse13"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          Debugging a JavaScript application involves several techniques. First,
-          use breakpoints in your code to pause execution at specific lines and
-          inspect variables. Visual Studio supports server-side debugging, while
-          the debugger keyword in JavaScript allows you to pause execution
-          directly in the browser. Secondly, using browser developer tools like
-          Chrome DevTools or Firefox Developer Tools provides powerful debugging
-          features such as breakpoints, stepping through code, inspecting
-          variables, and monitoring network activity. Additionally, console.log
-          statements are useful for logging information to the browser console
-          to track the flow of execution and inspect variable values at
-          different points in the code. Using debugger statements within the
-          code allows pausing execution and transferring control to the browser
-          debugger when reached. Furthermore, leveraging third-party tools like
-          ESLint or TypeScript for static code analysis can help catch syntax
-          errors and potential bugs early in the development process. Lastly,
-          testing frameworks such as Jest or Mocha combined with tools like
-          Selenium or Cypress for automated testing can help identify and fix
-          issues systematically across different parts of the application.
+          The difference between id and class is that id is a unique identifier
+          that can only be applied to one element on a page, while class can be
+          applied to multiple elements that share the same style. For example,
+          we can use id to style a specific header, and use class to style all
+          the paragraphs that have the same font and color.
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
         <label className="grow px-4 md:text-[18px]" htmlFor="collapse14">
-          14. What is <span className="font-bold">template literal</span> in
-          ES6?
+          14. CSS <span className="font-bold">margin vs padding</span>.
         </label>
         <input
           className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
@@ -297,31 +330,10 @@ const QnA_CSS = () => {
           id="collapse14"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          Template literals, introduced in ES6, allow for creating strings with
-          backticks (` `) instead of single or double quotes. They support
-          embedded expressions using `${}` syntax and preserve white space and
-          line breaks, making it easier to create dynamic and multi-line strings
-          in JavaScript.
-        </div>
-      </div>
-      <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
-        <label className="grow px-4 md:text-[18px]" htmlFor="collapse15">
-          15. Difference between{" "}
-          <span className="font-bold">Spread Operator and rest operator.</span>
-        </label>
-        <input
-          className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
-          type="checkbox"
-          name="collapse15"
-          id="collapse15"
-        />
-        <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          The spread operator (...) is used to expand arrays and objects into
-          individual elements, while the rest operator (...) gathers multiple
-          function arguments into an array. <br />
-          Spread operator spreads elements out, enabling easy copying or
-          merging, while rest operator gathers elements into a single variable,
-          useful for handling variable function arguments or destructuring.
+          CSS margin and padding are two properties that control the space
+          around and inside an element. The main difference between them is that
+          margin is the space outside the element's border, while padding is the
+          space inside the element's border.
         </div>
       </div>
     </Container>
