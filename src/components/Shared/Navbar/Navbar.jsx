@@ -201,7 +201,12 @@ const Navbar = () => {
                       className="inline-flex items-center"
                     >
                       <div className="flex items-center justify-center w-20 h-16">
-                        <h4 className=" font-bold">Interview QnA</h4>
+                        <img
+                          onClick={() => setIsMenuOpen(false)}
+                          className="w-16"
+                          src={logo}
+                          alt=""
+                        />
                       </div>
                     </Link>
                   </div>

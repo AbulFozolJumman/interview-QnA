@@ -1,11 +1,11 @@
-import Banner from "../Banner/Banner";
+import QnA_Interpersonal from "../../QnA_Interpersonal";
 
 const Home = () => {
-    return (
-        <div>
-            <Banner/>
-        </div>
-    );
+  return (
+    <div>
+      <QnA_Interpersonal />
+    </div>
+  );
 };
 
 export default Home;
