@@ -7,13 +7,13 @@ import SignUp from "../pages/Signup/SignUp";
 import JavascriptQuestions from "../pages/JavascriptQuestions";
 import ES6Questions from "../pages/ES6Questions";
 import ReactQuestions from "../pages/ReactQuestions";
-import ExpressJSQuestions from "../pages/ExpressJSQuestions";
 import MongoDBQuestion from "../pages/MongoDBQuestion";
 import NextJSQuestions from "../pages/NextJSQuestions";
 import Advance from "../pages/Advance";
 import QnA_html from "../pages/QnA_html";
 import QnA_CSS from "../pages/QnA_CSS";
 import QnA_NodeJS from "../pages/QnA_NodeJS";
+import QnAExpressJS from "../pages/QnAExpressJS";
 
 const router = createBrowserRouter([
   {
@@ -51,7 +51,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/express-question",
-        element: <ExpressJSQuestions />,
+        element: <QnAExpressJS />,
       },
       {
         path: "/advance-question",
