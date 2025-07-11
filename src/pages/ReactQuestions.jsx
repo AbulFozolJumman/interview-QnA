@@ -1552,6 +1552,362 @@ const ReactQuestions = () => {
           <br />* Server-এ session data রাখার দরকার হয় না (stateless system)
         </div>
       </div>
+      <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
+        <label className="grow px-4 md:text-[18px]" htmlFor="collapse26">
+          26. What are <span className="font-bold"> React Hooks?</span> Explain.
+        </label>
+        <input
+          className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
+          type="checkbox"
+          name="collapse26"
+          id="collapse26"
+        />
+        <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
+          Hooks are special functions in React that let us “hook into” features
+          like state, lifecycle, context, refs, etc., using only functional
+          components.
+          <br />
+          🧠 Why hooks?
+          <br />
+          - Hooks make React code shorter, cleaner, reusable, and easier to
+          test. They removed the need to use class components for complex logic.
+          <br />
+          🔹 1. `useState()`
+          <br />
+          🔸 Purpose: To store and manage data (state) inside a functional
+          component.
+          <br />
+          🔸 Use case: Counter, form input value, toggle states, etc.
+          <pre>{`
+ ✅ Code Example:
+import { useState } from "react";
+
+function Counter() {
+  const [count, setCount] = useState(0); // 0 is the initial value
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increase</button>
+    </div>
+  );
+}
+`}</pre>
+          <br />
+          🔹 2. `useEffect()`
+          <br />
+          🔸 Purpose: To handle side effects in React — things like fetching
+          data, setting up timers, listening to events, etc.
+          <br />
+          🔸 Use case: Data fetch, API call, DOM event setup, etc.
+          <pre>{`
+ ✅ Code Example:
+import { useEffect, useState } from "react";
+
+function Users() {
+  const [users, setUsers] = useState([]);
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then(res => res.json())
+      .then(data => setUsers(data));
+  }, []); // empty array means run only once (like componentDidMount)
+
+  return (
+    <ul>
+      {users.map(user => <li key={user.id}>{user.name}</li>)}
+    </ul>
+  );
+}
+`}</pre>
+          <br />
+          🔹 3. `useContext()`
+          <br />
+          🔸 Purpose: To access global data from React Context without props
+          drilling.
+          <br />
+          🔸 Use case: Theme, user info, language, cart data, etc.
+          <pre>{`
+ ✅ Code Example:
+import React, { useContext } from "react";
+import { ThemeContext } from "./ThemeContext";
+
+function Navbar() {
+  const theme = useContext(ThemeContext);
+
+  return <div style={{ background: theme === "dark" ? "#333" : "#fff" }}>Navbar</div>;
+}
+`}</pre>
+          <br />
+          🔹 4. `useRef()`
+          <br />
+          🔸 Purpose: To access DOM elements or store a mutable value that
+          doesn't trigger re-renders.
+          <br />
+          🔸 Use case: Focus an input, hold previous value, timers, etc.
+          <pre>{`
+ ✅ Code Example:
+import { useRef } from "react";
+
+function InputFocus() {
+  const inputRef = useRef();
+
+  const focusInput = () => {
+    inputRef.current.focus(); // access the DOM element
+  };
+
+  return (
+    <div>
+      <input ref={inputRef} />
+      <button onClick={focusInput}>Focus Input</button>
+    </div>
+  );
+}
+`}</pre>
+          <br />
+          🔹 5. `useMemo()`
+          <br />
+          🔸 Purpose: To cache a computed value and only recalculate it when
+          dependencies change — for performance optimization.
+          <br />
+          🔸 Use case: Heavy calculations or filtered data.
+          <pre>{`
+ ✅ Code Example:
+import { useMemo, useState } from "react";
+
+function ExpensiveCalc({ num }) {
+  const [count, setCount] = useState(0);
+
+  const double = useMemo(() => {
+    console.log("Calculating...");
+    return num * 2;
+  }, [num]);
+
+  return (
+    <div>
+      <p>Double: {double}</p>
+      <button onClick={() => setCount(count + 1)}>Re-render</button>
+    </div>
+  );
+}
+`}</pre>
+          <br />
+          🔹 6. `useCallback()`
+          <br />
+          🔸 Purpose: To cache a function and avoid recreating it unless needed
+          — helps prevent unnecessary re-renders of child components.
+          <br />
+          🔸 Use case: When passing functions to `React.memo` child components.
+          <pre>{`
+ ✅ Code Example:
+import { useCallback, useState } from "react";
+
+function Parent() {
+  const [count, setCount] = useState(0);
+
+  const handleClick = useCallback(() => {
+    console.log("Clicked");
+  }, []); // recreated only when dependencies change
+
+  return (
+    <>
+      <Child onClick={handleClick} />
+      <button onClick={() => setCount(count + 1)}>Update</button>
+    </>
+  );
+}
+
+const Child = React.memo(({ onClick }) => {
+  console.log("Child rendered");
+  return <button onClick={onClick}>Child Button</button>;
+});
+`}</pre>
+          <br />
+          🔹 7. `useReducer()`
+          <br />
+          🔸 Purpose: Used for managing complex state with many conditions —
+          similar to Redux reducer.
+          <br />
+          🔸 Use case: Todo app, form state, multi-step forms.
+          <pre>{`
+ ✅ Code Example:
+import { useReducer } from "react";
+
+function reducer(state, action) {
+  switch (action.type) {
+    case "increment": return { count: state.count + 1 };
+    case "decrement": return { count: state.count - 1 };
+    default: return state;
+  }
+}
+
+function Counter() {
+  const [state, dispatch] = useReducer(reducer, { count: 0 });
+
+  return (
+    <>
+      <p>{state.count}</p>
+      <button onClick={() => dispatch({ type: "increment" })}>+</button>
+      <button onClick={() => dispatch({ type: "decrement" })}>-</button>
+    </>
+  );
+}
+`}</pre>
+          <br />
+          🔹 8. `useLayoutEffect()`
+          <br />
+          🔸 Purpose: Like `useEffect`, but it runs synchronously after DOM
+          updates, before the browser paints.
+          <br />
+          🔸 Use case: For measuring layout size, scroll position, etc.
+          <pre>{`
+ ✅ Code Example:
+import { useLayoutEffect, useRef } from "react";
+
+function LayoutExample() {
+  const boxRef = useRef();
+
+  useLayoutEffect(() => {
+    console.log("Box width:", boxRef.current.offsetWidth);
+  }, []);
+
+  return <div ref={boxRef} style={{ width: "100px" }}>Box</div>;
+}
+`}</pre>
+          <br />
+          🔹 9. `useImperativeHandle()`
+          <br />
+          🔸 Purpose: Used with `forwardRef` to expose certain methods from
+          child to parent.
+          <br />
+          🔸 Use case: Custom input components, modal open/close from parent.
+          <pre>{`
+ ✅ Code Example:
+import { useImperativeHandle, forwardRef, useRef } from "react";
+
+const CustomInput = forwardRef((props, ref) => {
+  const inputRef = useRef();
+
+  useImperativeHandle(ref, () => ({
+    focusInput: () => {
+      inputRef.current.focus();
+    }
+  }));
+
+  return <input ref={inputRef} />;
+});
+
+function Parent() {
+  const inputRef = useRef();
+
+  return (
+    <>
+      <CustomInput ref={inputRef} />
+      <button onClick={() => inputRef.current.focusInput()}>Focus</button>
+    </>
+  );
+}
+`}</pre>
+          <br />
+          🔹 10. `useId()` (React 18+)
+          <br />
+          🔸 Purpose: To generate a unique and stable ID — useful for forms and
+          accessibility.
+          <pre>{`
+ ✅ Code Example:
+import { useId } from "react";
+
+function FormField() {
+  const id = useId();
+
+  return (
+    <div>
+      <label htmlFor={id}>Name</label>
+      <input id={id} type="text" />
+    </div>
+  );
+}
+`}</pre>
+          <br />
+          React-এ Hooks হলো কিছু বিশেষ function, যেগুলোর মাধ্যমে আমরা state,
+          lifecycle, context, reference ইত্যাদি ফিচারগুলো functional
+          component-এর মধ্যে ব্যবহার করতে পারি।
+          <br />
+          আগে এই সব জিনিস ব্যবহারের জন্য class component লাগত। কিন্তু এখন
+          শুধুমাত্র functional component দিয়েই সবকিছু করা যায়, শুধু hook ব্যবহার
+          করলেই হয়।
+          <br />
+          🔹 ১. `useState()`
+          <br />
+          🟢 এই hook দিয়ে আমরা কম্পোনেন্টের ভিতরে state তৈরি এবং আপডেট করতে
+          পারি। <br />
+          🟢 যেমন: input field-এর মান রাখা, counter বানানো ইত্যাদি।
+          <br />
+          🔹 ২. `useEffect()`
+          <br />
+          🟢 এটি দিয়ে আমরা side effect কাজ করতে পারি। <br />
+          🟢 যেমন: API থেকে data আনা, ইভেন্ট লিসেনার যোগ করা, timer সেট করা
+          ইত্যাদি।
+          <br />
+          🔹 ৩. `useContext()`
+          <br />
+          🟢 এটা দিয়ে আমরা Context API থেকে ডাটা নিতে পারি, props না পাঠিয়েই।{" "}
+          <br />
+          🟢 এটা props drilling কমিয়ে দেয় এবং global data সহজে ব্যবস্থাপনা করতে
+          সাহায্য করে।
+          <br />
+          🔹 ৪. `useRef()`
+          <br />
+          🟢 এটা দিয়ে আমরা DOM element-এর reference রাখতে পারি, যেমন কোনো input
+          element-এ focus করা। <br />
+          🟢 এটা এমন মান রাখতেও ব্যবহৃত হয় যেটা রেন্ডার ছাড়াই বদলানো যায়।
+          <br />
+          🔹 ৫. `useMemo()`
+          <br />
+          🟢 এটি একটি মানকে স্মরণ (memorize) করে রাখে যাতে রেন্ডার হলে বারবার
+          নতুন করে হিসাব না করতে হয়। <br />
+          🟢 এটি performance optimization-এর জন্য ভালো, বিশেষ করে বড় গণনার
+          ক্ষেত্রে।
+          <br />
+          🔹 ৬. `useCallback()`
+          <br />
+          🟢 এটি একটি function স্মরণ করে রাখে যাতে প্রতিবার রেন্ডারে নতুন
+          function তৈরি না হয়। <br />
+          🟢 এটি child কম্পোনেন্টে function পাঠানোর সময় helpful হয়।
+          <br />
+          🔹 ৭. `useReducer()`
+          <br />
+          🟢 এটি state ম্যানেজ করার একটি বিকল্প, যেটা জটিল state লজিক হ্যান্ডেল
+          করতে বেশি ব্যবহার হয়। <br />
+          🟢 Redux-এর মতো reducer লজিকের সাথে কাজ করে।
+          <br />
+          🔹 ৮. `useLayoutEffect()`
+          <br />
+          🟢 এটি `useEffect()`-এর মতো, তবে এটি DOM আপডেট হওয়ার পরপরই চলে,
+          রেন্ডারের আগে না। <br />
+          🟢 এটি layout মাপার কাজের জন্য দরকার হয়।
+          <br />
+          🔹 ৯. `useImperativeHandle()`
+          <br />
+          🟢 এটি `forwardRef()` এর সাথে ব্যবহার করে, যাতে child component parent
+          কে নির্দিষ্ট কিছু method ব্যবহার করতে দেয়। <br />
+          🟢 বিশেষভাবে modal, custom input control করার জন্য কাজে লাগে।
+          <br />
+          🔹 ১০. `useId()` (React 18+)
+          <br />
+          🟢 এটি একটি unique ID তৈরি করে। <br />
+          🟢 এটি form element বা accessibility feature ব্যবহারের সময় দরকার হয়,
+          যেন ID গুলো একই থাকে।
+          <br />
+          ✅ সংক্ষেপে:
+          <br />
+          * React Hooks আমাদের functional component-এর মধ্যে advanced React
+          ফিচার ব্যবহার করতে দেয়
+          <br />
+          * প্রতিটি hook-এর নিজের নিয়ম এবং ব্যবহার ক্ষেত্র রয়েছে
+          <br />* কোডকে সহজ, পরিষ্কার এবং পুনঃব্যবহারযোগ্য করে তোলে
+        </div>
+      </div>
     </Container>
   );
 };

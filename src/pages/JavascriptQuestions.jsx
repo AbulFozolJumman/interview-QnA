@@ -1323,6 +1323,205 @@ const JavascriptQuestions = () => {
           উচিত।
         </div>
       </div>
+      <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
+        <label className="grow px-4 md:text-[18px]" htmlFor="collapse28">
+          28. Difference between function
+          <span className="font-bold"> parameter and argument?</span>
+        </label>
+        <input
+          className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
+          type="checkbox"
+          name="collapse28"
+          id="collapse28"
+        />
+        <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
+          Many people confuse parameters and arguments, but they are not the
+          same.
+          <br />
+          🔹 Parameter:
+          <br />
+          * A variable listed in the function definition
+          <br />* It acts as a placeholder to receive values
+          <pre>
+            {`
+✅ Example:
+function greet(name) {
+  console.log("Hello, " + name);
+}
+// Here, name is a parameter
+`}
+          </pre>
+          🔹 Argument:
+          <br />
+          * A value passed to the function when it is called
+          <br />
+          * The value that replaces the parameter
+          <br />
+          ✅ Example:
+          <br />
+          greet("Jumman");
+          <br />
+          Here, "Jumman" is an argument
+          <br />
+          <br />
+          অনেকেই parameter এবং argument গুলিয়ে ফেলে, কিন্তু এরা এক নয়।
+          <br />
+          🔹 Parameter (প্যারামিটার):
+          <br />
+          * এটি একটি ভ্যারিয়েবল, যা ফাংশন ডিক্লেয়ার করার সময় ব্যবহার করা হয়
+          <br />
+          * এটি ভ্যালু গ্রহণ করার জায়গা হিসেবে কাজ করে
+          <br />
+          🔹 Argument (আর্গুমেন্ট):
+          <br />
+          * এটি একটি value, যা ফাংশন কল করার সময় পাঠানো হয়
+          <br />* এটি parameter-এর জায়গায় বসে কাজ করে
+        </div>
+      </div>
+      <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
+        <label className="grow px-4 md:text-[18px]" htmlFor="collapse29">
+          29. What is
+          <span className="font-bold"> Object-Oriented Programming (OOP)?</span>
+        </label>
+        <input
+          className="peer p-0 m-0 h-0 w-0 appearance-none rounded border text-slate-800 accent-slate-600 opacity-0"
+          type="checkbox"
+          name="collapse29"
+          id="collapse29"
+        />
+        <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
+          Object-Oriented Programming (OOP) is a way of writing code where we
+          organize it into objects — just like real-world things (car, user,
+          product).
+          <br />
+          Each object has:
+          <br />
+          * Properties (data)
+          <br />
+          * Methods (functions)
+          <br />
+          It helps to structure big programs, reuse code, and keep everything
+          organized and manageable.
+          <br />
+          🔹 Main Concepts of OOP (4 Pillars):
+          <br />
+          1. Encapsulation – Group data and functions together
+          <br />
+          * Keep related things inside one object/class
+          <br />
+          * Hide internal details from outside
+          <br />
+          ✅ Example:
+          <img
+            src="https://res.cloudinary.com/dh6tn79fy/image/upload/v1752224728/e1_bd2tx1.png"
+            alt=""
+          />
+          2. Inheritance – Reuse code from other classes
+          <br />
+          * One class can inherit properties and methods from another
+          <br />
+          ✅ Example:
+          <img
+            src="https://res.cloudinary.com/dh6tn79fy/image/upload/v1752224728/e2_d4h8xr.png"
+            alt=""
+          />
+          3. Polymorphism – Same method name, different behavior
+          <br />
+          * One method works differently based on the object/class
+          <br />
+          ✅ Example:
+          <img
+            src="https://res.cloudinary.com/dh6tn79fy/image/upload/v1752224728/e3_tqen6p.png"
+            alt=""
+          />
+          4. Abstraction – Show only what is needed
+          <br />
+          * Hide complex parts, show only necessary details
+          <br />
+          * Keeps code clean and secure
+          <br />
+          ✅ Example: You may call `user.login()`, but you don’t need to know
+          how login works inside.
+          <br />
+          🔹 Why Use OOP in JavaScript?
+          <br />
+          * Organizes code better
+          <br />
+          * Reuse code using classes
+          <br />
+          * Makes code easier to test and debug
+          <br />
+          * Great for real-world applications like e-commerce, chat apps, etc.
+          <br />
+          🔹 Real-Life Analogy:
+          <br />
+          Think of a Car as an object:
+          <br />
+          * Properties → color, brand, model
+          <br />
+          * Methods → start(), drive(), stop()
+          <br />
+          🔹 ES6 Class Syntax Example:
+          <img
+            src="https://res.cloudinary.com/dh6tn79fy/image/upload/v1752224728/e4_jqe3ml.png"
+            alt=""
+          />
+          <br />
+          Object-Oriented Programming (OOP) হলো প্রোগ্রাম লেখার একটি পদ্ধতি,
+          যেখানে কোডগুলোকে অবজেক্ট (object) আকারে গঠিত করা হয়।
+          <br />
+          প্রতিটি অবজেক্টের দুটি জিনিস থাকে:
+          <br />
+          * প্রপার্টি (property) → ডেটা বা বৈশিষ্ট্য
+          <br />
+          * মেথড (method) → ফাংশন বা কাজ করার ক্ষমতা
+          <br />
+          OOP ব্যবহারে বড় বড় প্রজেক্ট গুছিয়ে লেখা যায়, কোড বারবার ব্যবহার
+          করা যায়, ও ভুল খুঁজে বের করাও সহজ হয়।
+          <br />
+          🔹 OOP-এর ৪টি মূল ভিত্তি (4 Pillars):
+          <br />
+          # ১. Encapsulation (সংবরণ/আবরণ)
+          <br />
+          * ডেটা এবং ফাংশনকে একসাথে একটি অবজেক্ট বা ক্লাসে গুচিয়ে রাখা
+          <br />
+          * বাইরের অংশ থেকে কিছু অংশ লুকিয়ে রাখা যায়
+          <br />
+          # ২. Inheritance (উত্তরাধিকার)
+          <br />
+          * একটি ক্লাস অন্য একটি ক্লাসের প্রপার্টি এবং মেথড ব্যবহার করতে পারে
+          <br />
+          * কোড পুনরায় ব্যবহার করা যায়
+          <br />
+          # ৩. Polymorphism (বহুরুপিতা)
+          <br />
+          * একই নামের মেথড, কিন্তু বিভিন্ন ক্লাসে ভিন্নভাবে কাজ করে
+          <br />
+          # ৪. Abstraction (নির্যাস/সারাংশ উপস্থাপন)
+          <br />
+          * জটিল বিষয়গুলো লুকিয়ে রেখে শুধু প্রয়োজনীয় অংশ দেখানো
+          <br />
+          * কোডকে পরিষ্কার ও সিকিউর রাখা যায়
+          <br />
+          🔹 JavaScript-এ OOP কেন ব্যবহার করবেন?
+          <br />
+          * বড় প্রজেক্ট গুছিয়ে তৈরি করা যায়
+          <br />
+          * কোড বারবার ব্যবহার করা যায় (reuse)
+          <br />
+          * টেস্ট ও ডিবাগ করা সহজ হয়
+          <br />
+          * E-commerce, Chat App, Inventory System এর মতো বাস্তব প্রজেক্টে
+          উপকারী
+          <br />
+          🔹 বাস্তব জীবনের উদাহরণ:
+          <br />
+          Car (গাড়ি) → একটি অবজেক্ট
+          <br />
+          * প্রপার্টি → color, brand, model
+          <br />* মেথড → start(), drive(), stop()
+        </div>
+      </div>
     </Container>
   );
 };
