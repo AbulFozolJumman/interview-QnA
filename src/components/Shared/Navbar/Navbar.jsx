@@ -79,16 +79,6 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/advance-question"
-              aria-label=""
-              title=""
-              className={({ isActive }) => (isActive ? "active" : "default")}
-            >
-              Advance
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
               to="/react-question"
               aria-label=""
               title=""
