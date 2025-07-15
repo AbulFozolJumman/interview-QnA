@@ -511,8 +511,25 @@ const QnA_Interpersonal = () => {
           id="collapse17"
         />
         <div className="-transparent w-full absolute -translate-y-full scale-75 scale-y-0 px-4 py-1 opacity-0 transition-all duration-0 peer-checked:relative peer-checked:translate-y-0 peer-checked:scale-100 peer-checked:scale-y-100 peer-checked:bg-green-50 text-lg text-black peer-checked:opacity-100">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
-          reiciendis...
+          "As a fresher (or junior developer), my main goal is to grow my skills
+          and gain real-world experience. <br />
+          I’m open to a fair salary that matches my current skill level and the
+          company’s budget.
+          <br />
+          I trust that your company will offer a reasonable starting salary, and
+          I’m also confident that as I improve and add value, I’ll earn the
+          opportunity for growth in the future."
+          <br />
+          <br />
+          "একজন ফ্রেশার (বা জুনিয়র ডেভেলপার) হিসেবে, আমার মূল লক্ষ্য হলো স্কিল
+          ডেভেলপ করা এবং বাস্তব অভিজ্ঞতা অর্জন করা।
+          <br />
+          আমি এমন একটি সম্মানজনক স্যালারির আশা করি, যা আমার বর্তমান স্কিল এবং
+          কোম্পানির বাজেটের সাথে মানানসই।
+          <br />
+          আমি বিশ্বাস করি, আপনারা একটি যুক্তিসংগত স্যালারি অফার করবেন, এবং
+          ভবিষ্যতে আমি আরও ভ্যালু অ্যাড করতে পারলে, আমার স্যালারি বৃদ্ধির সুযোগও
+          আসবে।"
         </div>
       </div>
       <div className="flex flex-wrap justify-start overflow-hidden bg-green-100 text-green-600 shadow-md mb-2">
